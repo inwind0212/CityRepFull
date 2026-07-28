@@ -1,0 +1,326 @@
+city,source_class,source_detail,mapped_group
+sydney,Agribusiness,,Agriculture / Rural
+sydney,Business Development,,Commercial
+sydney,Business Park,,Commercial
+sydney,Business Park,<Null>,Commercial
+sydney,Business Zone - Business Park,,Commercial
+sydney,Business Zone - Commercial Core,,Commercial
+sydney,Business Zone - Local Centre,,Commercial
+sydney,Business Zone - Mixed Use,,Mixed Use
+sydney,Commercial Centre,,Commercial
+sydney,Commercial Core,,Commercial
+sydney,Deferred Matter,,Other
+sydney,Drainage,,Utilities
+sydney,Employment,,Industrial
+sydney,Enterprise,,Commercial
+sydney,Enterprise Corridor,,Commercial
+sydney,Environment,,Green / Recreation
+sydney,Environment and Recreation,,Green / Recreation
+sydney,Environmental Conservation,,Green / Recreation
+sydney,Environmental Conservation, ,Green / Recreation
+sydney,Environmental Conservation,<Null>,Green / Recreation
+sydney,Environmental Conservation,Environmental,Green / Recreation
+sydney,Environmental Living,,Residential
+sydney,Environmental Living, ,Residential
+sydney,Environmental Management,,Green / Recreation
+sydney,Environmental Management, ,Green / Recreation
+sydney,Forestry,,Agriculture / Rural
+sydney,General Industrial,,Industrial
+sydney,General Industrial, ,Industrial
+sydney,General Industrial,<Null>,Industrial
+sydney,General Residential,,Residential
+sydney,General Residential, ,Residential
+sydney,Heavy Industrial,,Industrial
+sydney,High Density Residential,,Residential
+sydney,High Density Residential,<Null>,Residential
+sydney,Infrastructure,,Other
+sydney,Infrastructure,Air Transport Facilities,Transportation
+sydney,Infrastructure,Air Transport Facility,Transportation
+sydney,Infrastructure,Airport,Transportation
+sydney,Infrastructure,Australia Post,Utilities
+sydney,Infrastructure,Boarding House,Residential
+sydney,Infrastructure,Boating Facilities,Transportation
+sydney,Infrastructure,Bridge,Transportation
+sydney,Infrastructure,Bringelly Road,Transportation
+sydney,Infrastructure,Bus Depot,Industrial
+sydney,Infrastructure,Bus Only Link,Transportation
+sydney,Infrastructure,Car Park,Transportation
+sydney,Infrastructure,Car Park/ Community Facility,Transportation
+sydney,Infrastructure,Cemetery,Institutional / Civic
+sydney,Infrastructure,"Cemetery, Church, Seniors Housing",Institutional / Civic
+sydney,Infrastructure,Child Care Centre,Institutional / Civic
+sydney,Infrastructure,Childcare Centre,Institutional / Civic
+sydney,Infrastructure,Classified Road,Transportation
+sydney,Infrastructure,Classified Road & Strategic Bus Corridor,Transportation
+sydney,Infrastructure,Classified Road - Acquisition,Transportation
+sydney,Infrastructure,Commonwealth Government,Institutional / Civic
+sydney,Infrastructure,Commonwealth Uses,Institutional / Civic
+sydney,Infrastructure,Community Facilities,Institutional / Civic
+sydney,Infrastructure,Community Facility,Institutional / Civic
+sydney,Infrastructure,Community Purposes,Institutional / Civic
+sydney,Infrastructure,Convent and Hospital,Institutional / Civic
+sydney,Infrastructure,Correction Centre,Institutional / Civic
+sydney,Infrastructure,Correctional Centre,Institutional / Civic
+sydney,Infrastructure,Council Depot,Industrial
+sydney,Infrastructure,Defence,Institutional / Civic
+sydney,Infrastructure,Defence Land,Institutional / Civic
+sydney,Infrastructure,Depot,Industrial
+sydney,Infrastructure,Depots,Industrial
+sydney,Infrastructure,Detention Basin,Water
+sydney,Infrastructure,Drainage,Utilities
+sydney,Infrastructure,Drainage and Flood Mitigation Works,Utilities
+sydney,Infrastructure,Education Establishment,Institutional / Civic
+sydney,Infrastructure,Educational Establishment,Institutional / Civic
+sydney,Infrastructure,Educational Establishment & Place of Public Worsh*,Institutional / Civic
+sydney,Infrastructure,Educational Establishment & Place of Worship,Institutional / Civic
+sydney,Infrastructure,Educational Establishment and Place of Public Worship,Institutional / Civic
+sydney,Infrastructure,Educational Establishment/ Place of Public Worship,Institutional / Civic
+sydney,Infrastructure,Educational Establishments,Institutional / Civic
+sydney,Infrastructure,Elect Trans & Distrib,Utilities
+sydney,Infrastructure,Electrical Substation,Utilities
+sydney,Infrastructure,Electricity,Utilities
+sydney,Infrastructure,Electricity Distribution,Utilities
+sydney,Infrastructure,Electricity Generating Works,Utilities
+sydney,Infrastructure,Electricity Generation Works,Utilities
+sydney,Infrastructure,Electricity Sub Station,Utilities
+sydney,Infrastructure,Electricity Substation,Utilities
+sydney,Infrastructure,Electricity Supply,Utilities
+sydney,Infrastructure,Electricity Transmission,Utilities
+sydney,Infrastructure,Electricity Transmission & Distribution,Utilities
+sydney,Infrastructure,Electricity Transmission and Distribution,Utilities
+sydney,Infrastructure,Electricity Transmission or Distribution,Utilities
+sydney,Infrastructure,Electricity Transmission or Distribution Network,Utilities
+sydney,Infrastructure,ElectricityGeneratingWork,Utilities
+sydney,Infrastructure,Emergency Services,Institutional / Civic
+sydney,Infrastructure,Emergency Services Facilities,Institutional / Civic
+sydney,Infrastructure,Emergency Services Facility,Institutional / Civic
+sydney,Infrastructure,"Emergency Services Facility, Admin Building",Institutional / Civic
+sydney,Infrastructure,Fire Station,Institutional / Civic
+sydney,Infrastructure,Footpath,Transportation
+sydney,Infrastructure,Function Centre,Institutional / Civic
+sydney,Infrastructure,Future Road,Transportation
+sydney,Infrastructure,Future Road Corridor,Transportation
+sydney,Infrastructure,Future Transport Corridor,Transportation
+sydney,Infrastructure,Gas Transmission and Distribution,Utilities
+sydney,Infrastructure,Health Service Facility,Institutional / Civic
+sydney,Infrastructure,Health Services & Educational Facilities,Institutional / Civic
+sydney,Infrastructure,Health Services Facilities,Institutional / Civic
+sydney,Infrastructure,Health Services Facility,Institutional / Civic
+sydney,Infrastructure,Heritage Item,Other
+sydney,Infrastructure,Hospital,Institutional / Civic
+sydney,Infrastructure,Information and Education Facilities,Institutional / Civic
+sydney,Infrastructure,Information and Education Facility,Institutional / Civic
+sydney,Infrastructure,Infrastructure (Electricity),Utilities
+sydney,Infrastructure,Light Rail Stabling Faci*,Transportation
+sydney,Infrastructure,Local  Road,Transportation
+sydney,Infrastructure,Local Drainage,Utilities
+sydney,Infrastructure,Local Road,Transportation
+sydney,Infrastructure,Local Road Widening,Transportation
+sydney,Infrastructure,Maintenance Depot,Industrial
+sydney,Infrastructure,Motorway,Transportation
+sydney,Infrastructure,Navigation & Emergency Response Facility,Institutional / Civic
+sydney,Infrastructure,Northern Road,Transportation
+sydney,Infrastructure,Passenger Transport Facility,Transportation
+sydney,Infrastructure,Pipeline,Utilities
+sydney,Infrastructure,Place of Public Worship,Institutional / Civic
+sydney,Infrastructure,Place of Public Worship & Educational Establishmnt,Institutional / Civic
+sydney,Infrastructure,Place of Public Worship and Cemetery,Institutional / Civic
+sydney,Infrastructure,Place of Worship,Institutional / Civic
+sydney,Infrastructure,Place of Worship and Educational Establishments,Institutional / Civic
+sydney,Infrastructure,Police,Institutional / Civic
+sydney,Infrastructure,Post Office,Institutional / Civic
+sydney,Infrastructure,Public Admin Building,Institutional / Civic
+sydney,Infrastructure,Public Administration Building,Institutional / Civic
+sydney,Infrastructure,Public Administration Buildings,Institutional / Civic
+sydney,Infrastructure,Public Administration Buildings and Car Park,Transportation
+sydney,Infrastructure,Public Administration Buildings and Depot,Institutional / Civic
+sydney,Infrastructure,Public Facilities,Other
+sydney,Infrastructure,Public Purposes Corridor,Other
+sydney,Infrastructure,Public Square,Other
+sydney,Infrastructure,Public Transport Corridor,Transportation
+sydney,Infrastructure,Public Utility Undertaking,Utilities
+sydney,Infrastructure,Pumping Station,Utilities
+sydney,Infrastructure,Quarry,Industrial
+sydney,Infrastructure,Rail,Transportation
+sydney,Infrastructure,Rail Corridor,Transportation
+sydney,Infrastructure,Rail Infrastructure,Transportation
+sydney,Infrastructure,Rail Infrastructure Facilities,Transportation
+sydney,Infrastructure,Rail Infrastructure Facility,Transportation
+sydney,Infrastructure,Railway,Transportation
+sydney,Infrastructure,Railway Corridor,Transportation
+sydney,Infrastructure,Railway Infrastructure,Transportation
+sydney,Infrastructure,Railway Infrastructure Facilities,Transportation
+sydney,Infrastructure,Railway Infrastructure Facility,Transportation
+sydney,Infrastructure,Railways,Transportation
+sydney,Infrastructure,Remand Centre & Hospital,Institutional / Civic
+sydney,Infrastructure,Research Facility,Institutional / Civic
+sydney,Infrastructure,Research Station,Institutional / Civic
+sydney,Infrastructure,Road,Transportation
+sydney,Infrastructure,Road Infrastructure,Transportation
+sydney,Infrastructure,Road Infrastructure Facility,Transportation
+sydney,Infrastructure,Road and Traffic Facilities,Transportation
+sydney,Infrastructure,SHFT,Other
+sydney,Infrastructure,SP2 Local Road,Transportation
+sydney,Infrastructure,School,Institutional / Civic
+sydney,Infrastructure,"School, Church",Institutional / Civic
+sydney,Infrastructure,Seniors Housing,Institutional / Civic
+sydney,Infrastructure,Sewage Pump Station,Utilities
+sydney,Infrastructure,Sewage Pumping Station,Utilities
+sydney,Infrastructure,Sewage Reticulation System,Utilities
+sydney,Infrastructure,Sewage System,Utilities
+sydney,Infrastructure,Sewage Treatment Plant,Utilities
+sydney,Infrastructure,Sewerage,Utilities
+sydney,Infrastructure,Sewerage Pumping Station,Utilities
+sydney,Infrastructure,Sewerage System,Utilities
+sydney,Infrastructure,Sewerage Systems,Utilities
+sydney,Infrastructure,Sewerage Treatment Plant,Utilities
+sydney,Infrastructure,Signal Station,Other
+sydney,Infrastructure,Special Use ,Other
+sydney,Infrastructure,Stormwater Management,Utilities
+sydney,Infrastructure,Stormwater Management System,Utilities
+sydney,Infrastructure,Stormwater Management Systems,Utilities
+sydney,Infrastructure,Stormwater System,Utilities
+sydney,Infrastructure,Stormwater Systems,Utilities
+sydney,Infrastructure,Strategic Bus Corridor,Transportation
+sydney,Infrastructure,Substation,Utilities
+sydney,Infrastructure,Sydney Harbour Federation Trust,Other
+sydney,Infrastructure,Sydney Water Depot,Industrial
+sydney,Infrastructure,Telecommunications,Utilities
+sydney,Infrastructure,Telecommunications Facilities,Utilities
+sydney,Infrastructure,Telecommunications Facility,Utilities
+sydney,Infrastructure,Telephone Exchange,Utilities
+sydney,Infrastructure,Transport Depot,Transportation
+sydney,Infrastructure,Transport Facility,Transportation
+sydney,Infrastructure,Trunk Drainage,Utilities
+sydney,Infrastructure,Unclassified Regional Road,Transportation
+sydney,Infrastructure,Utility (substation),Utilities
+sydney,Infrastructure,Waste & Resource Management Facilities,Utilities
+sydney,Infrastructure,Waste Management Facility,Utilities
+sydney,Infrastructure,Waste Transfer Station,Utilities
+sydney,Infrastructure,Waste or Resource Management Facility,Utilities
+sydney,Infrastructure,Water,Utilities
+sydney,Infrastructure,Water Infrastructure,Utilities
+sydney,Infrastructure,Water Recycling Facility,Utilities
+sydney,Infrastructure,Water Reservoir,Utilities
+sydney,Infrastructure,Water Reticulation System,Utilities
+sydney,Infrastructure,Water Sewer and Drainage,Utilities
+sydney,Infrastructure,Water Storage Facility,Utilities
+sydney,Infrastructure,Water Supply,Utilities
+sydney,Infrastructure,Water Supply System,Utilities
+sydney,Infrastructure,Water Supply System & Strategic Bus Corridor,Transportation
+sydney,Infrastructure,Water Supply Systems,Utilities
+sydney,Infrastructure,Water and Sewerage,Utilities
+sydney,Infrastructure,Western Sydney International (Nancy-Bird Walton) *,Transportation
+sydney,Infrastructure,Wharf Facilities,Other
+sydney,Infrastructure,Wharf or Boating Facilities,Transportation
+sydney,Infrastructure,Youth Centre,Institutional / Civic
+sydney,Large Lot Residential,,Residential
+sydney,Light Industrial,,Industrial
+sydney,Light Industrial,<Null>,Industrial
+sydney,Local Centre,,Commercial
+sydney,Local Centre, ,Commercial
+sydney,Low Density Residential,,Residential
+sydney,Low Density Residential, ,Residential
+sydney,Low Density Residential,<Null>,Residential
+sydney,Low Density Residential,Low Density,Residential
+sydney,Medium Density Residential,,Residential
+sydney,Medium Density Residential, ,Residential
+sydney,Medium Density Residential,Medium Density,Residential
+sydney,Metropolitan Centre,,Commercial
+sydney,Mixed Use,,Mixed Use
+sydney,Mixed Use, ,Mixed Use
+sydney,Mixed Use,Community Facility,Mixed Use
+sydney,National Parks and Nature Reserves,,Green / Recreation
+sydney,Natural Waterways,,Water
+sydney,Neighbourhood Centre,,Commercial
+sydney,Neighbourhood Centre, ,Commercial
+sydney,Open Space,,Green / Recreation
+sydney,Parkland,,Green / Recreation
+sydney,Port and Employment,,Industrial
+sydney,Primary Production,,Agriculture / Rural
+sydney,Primary Production Small Lots,,Agriculture / Rural
+sydney,Private Recreation,,Green / Recreation
+sydney,Productivity Support,,Commercial
+sydney,Public Recreation,,Green / Recreation
+sydney,Public Recreation, ,Green / Recreation
+sydney,Public Recreation,<Null>,Green / Recreation
+sydney,Public Recreation,Open Space,Green / Recreation
+sydney,Public Recreation - Regional,,Green / Recreation
+sydney,Public Recreation – Preferred Locations,,Green / Recreation
+sydney,Railways,,Transportation
+sydney,Recreation Zone - Private Recreation,,Green / Recreation
+sydney,Recreation Zone - Public Recreation,,Green / Recreation
+sydney,Recreational Waterways,,Water
+sydney,Regional Open Space,,Green / Recreation
+sydney,Regional Park,,Green / Recreation
+sydney,Residential,,Residential
+sydney,Residential (Low Density),,Residential
+sydney,Residential Zone - Medium Density Residential,,Residential
+sydney,Residential – Business,,Mixed Use
+sydney,Road and Road Widening,,Transportation
+sydney,Rural Landscape,,Agriculture / Rural
+sydney,Rural Landscape, ,Agriculture / Rural
+sydney,Special Activities,,Other
+sydney,Special Activities,Aerodrome,Transportation
+sydney,Special Activities,Botanic Garden,Green / Recreation
+sydney,Special Activities,Bus Depot,Industrial
+sydney,Special Activities,Canal Road Arts Precinct,Transportation
+sydney,Special Activities,Car Park,Transportation
+sydney,Special Activities,Cemetery,Institutional / Civic
+sydney,Special Activities,Cemetery and Crematorium,Institutional / Civic
+sydney,Special Activities,Childcare Centre,Institutional / Civic
+sydney,Special Activities,Commercial premises; Community facilities,Institutional / Civic
+sydney,Special Activities,Commonwealth Activities,Institutional / Civic
+sydney,Special Activities,Commonwealth Purposes,Institutional / Civic
+sydney,Special Activities,Community Facility,Institutional / Civic
+sydney,Special Activities,Correctional Centre,Institutional / Civic
+sydney,Special Activities,Crematorium,Institutional / Civic
+sydney,Special Activities,Defence,Institutional / Civic
+sydney,Special Activities,"Ecotourism, Camping Ground & Function Centre",Green / Recreation
+sydney,Special Activities,Education Agriculture,Institutional / Civic
+sydney,Special Activities,Educational Establishment,Institutional / Civic
+sydney,Special Activities,Educational Establishment/Place of Public Worship,Institutional / Civic
+sydney,Special Activities,Emergency Services Facility,Institutional / Civic
+sydney,Special Activities,Environmental Facility,Green / Recreation
+sydney,Special Activities,Health Services Facilities,Institutional / Civic
+sydney,Special Activities,Health Services Facility,Institutional / Civic
+sydney,Special Activities,Health Services Facility and Educational Establishment,Institutional / Civic
+sydney,Special Activities,Hospital,Institutional / Civic
+sydney,Special Activities,Innovation Precinct,Commercial
+sydney,Special Activities,Luna Park,Green / Recreation
+sydney,Special Activities,Management Plan North Head School of Artillery,Institutional / Civic
+sydney,Special Activities,Market,Commercial
+sydney,Special Activities,Pisciculture,Agriculture / Rural
+sydney,Special Activities,Place of Public Worship,Institutional / Civic
+sydney,Special Activities,Places of Public Worship,Institutional / Civic
+sydney,Special Activities,Quarry,Industrial
+sydney,Special Activities,Recreation Facility,Green / Recreation
+sydney,Special Activities,Recreation Facility (Major),Green / Recreation
+sydney,Special Activities,Recreation Facility (Outdoor),Green / Recreation
+sydney,Special Activities,Registered Club,Other
+sydney,Special Activities,Seniors Housing,Institutional / Civic
+sydney,Special Activities,Sewerage System,Utilities
+sydney,Special Activities,Sydney Fish Market,Commercial
+sydney,Special Activities,Sydney Wholesale and Retail Markets,Commercial
+sydney,Special Activities,Villawood Immigration Detention Centre,Institutional / Civic
+sydney,Special Activities,Waste Management Facility,Utilities
+sydney,Special Activities,Waste Recycling,Utilities
+sydney,Special Activities,Water Supply System,Utilities
+sydney,Special Activities,Zoological Gardens,Green / Recreation
+sydney,Special Purposes Zone - Comminity,,Institutional / Civic
+sydney,Special Purposes Zone - Infrastructure,,Utilities
+sydney,Special Uses,,Other
+sydney,Tourism,,Commercial
+sydney,Tourist,,Commercial
+sydney,Tourist,Tourism,Commercial
+sydney,Tourist,Tourist,Commercial
+sydney,Transition,,Vacant / Reserve
+sydney,Unzoned,,Other
+sydney,Unzoned Land,,Other
+sydney,Urban,,Vacant / Reserve
+sydney,Urban Development, ,Vacant / Reserve
+sydney,Village,,Commercial
+sydney,Waterfront Use,,Commercial
+sydney,Waterway,,Water
+sydney,Working Waterfront,,Industrial
+sydney,Working Waterways,,Water

@@ -1,0 +1,327 @@
+city,source_class,source_detail,prepared_count,mapped_group,release_sample_count,release_labels,explicit_mapping
+sydney,Agribusiness,,14,Agriculture / Rural,0,,True
+sydney,Forestry,,3,Agriculture / Rural,0,,True
+sydney,Primary Production,,87,Agriculture / Rural,0,,True
+sydney,Primary Production Small Lots,,96,Agriculture / Rural,0,,True
+sydney,Rural Landscape,,87,Agriculture / Rural,0,,True
+sydney,Rural Landscape, ,12,Agriculture / Rural,1,Agriculture / Rural,True
+sydney,Special Activities,Pisciculture,1,Agriculture / Rural,1,Agriculture / Rural,True
+sydney,Business Development,,16,Commercial,0,,True
+sydney,Business Park,,14,Commercial,0,,True
+sydney,Business Park,<Null>,1,Commercial,7,Commercial,True
+sydney,Business Zone - Business Park,,1,Commercial,0,,True
+sydney,Business Zone - Commercial Core,,4,Commercial,0,,True
+sydney,Business Zone - Local Centre,,1,Commercial,0,,True
+sydney,Commercial Centre,,101,Commercial,0,,True
+sydney,Commercial Core,,1,Commercial,0,,True
+sydney,Enterprise,,1,Commercial,14,Commercial,True
+sydney,Enterprise,,62,Commercial,14,Commercial,True
+sydney,Enterprise Corridor,,3,Commercial,0,,True
+sydney,Local Centre,,1531,Commercial,0,,True
+sydney,Local Centre, ,1,Commercial,0,,True
+sydney,Metropolitan Centre,,10,Commercial,0,,True
+sydney,Neighbourhood Centre,,16,Commercial,0,,True
+sydney,Neighbourhood Centre, ,2,Commercial,0,,True
+sydney,Productivity Support,,342,Commercial,0,,True
+sydney,Special Activities,Innovation Precinct,2,Commercial,108,Commercial,True
+sydney,Special Activities,Market,2,Commercial,7,Commercial,True
+sydney,Special Activities,Sydney Fish Market,1,Commercial,1,Commercial,True
+sydney,Special Activities,Sydney Wholesale and Retail Markets,1,Commercial,9,Commercial,True
+sydney,Tourism,,2,Commercial,0,,True
+sydney,Tourist,,18,Commercial,0,,True
+sydney,Tourist,Tourism,1,Commercial,2,Commercial,True
+sydney,Tourist,Tourist,1,Commercial,2,Commercial,True
+sydney,Village,,24,Commercial,0,,True
+sydney,Waterfront Use,,2,Commercial,0,,True
+sydney,Environment,,5,Green / Recreation,0,,True
+sydney,Environment and Recreation,,71,Green / Recreation,0,,True
+sydney,Environmental Conservation,,1564,Green / Recreation,0,,True
+sydney,Environmental Conservation, ,7,Green / Recreation,66,Green / Recreation,True
+sydney,Environmental Conservation,<Null>,2,Green / Recreation,19,Green / Recreation,True
+sydney,Environmental Conservation,Environmental,4,Green / Recreation,3,Green / Recreation,True
+sydney,Environmental Management,,450,Green / Recreation,0,,True
+sydney,Environmental Management, ,1,Green / Recreation,0,,True
+sydney,National Parks and Nature Reserves,,207,Green / Recreation,0,,True
+sydney,Open Space,,4,Green / Recreation,0,,True
+sydney,Parkland,,2,Green / Recreation,0,,True
+sydney,Private Recreation,,361,Green / Recreation,0,,True
+sydney,Public Recreation,,8148,Green / Recreation,0,,True
+sydney,Public Recreation, ,4,Green / Recreation,4,Green / Recreation,True
+sydney,Public Recreation,<Null>,4,Green / Recreation,0,,True
+sydney,Public Recreation,Open Space,12,Green / Recreation,19,Green / Recreation,True
+sydney,Public Recreation - Regional,,6,Green / Recreation,0,,True
+sydney,Public Recreation – Preferred Locations,,1,Green / Recreation,0,,True
+sydney,Recreation Zone - Private Recreation,,1,Green / Recreation,0,,True
+sydney,Recreation Zone - Public Recreation,,4,Green / Recreation,0,,True
+sydney,Regional Open Space,,2,Green / Recreation,0,,True
+sydney,Regional Park,,7,Green / Recreation,0,,True
+sydney,Special Activities,Botanic Garden,2,Green / Recreation,33,Green / Recreation,True
+sydney,Special Activities,"Ecotourism, Camping Ground & Function Centre",1,Green / Recreation,1,Green / Recreation,True
+sydney,Special Activities,Environmental Facility,3,Green / Recreation,62,Green / Recreation,True
+sydney,Special Activities,Luna Park,1,Green / Recreation,0,,True
+sydney,Special Activities,Recreation Facility,1,Green / Recreation,11,Green / Recreation,True
+sydney,Special Activities,Recreation Facility (Major),1,Green / Recreation,6,Green / Recreation,True
+sydney,Special Activities,Recreation Facility (Outdoor),7,Green / Recreation,56,Green / Recreation,True
+sydney,Special Activities,Zoological Gardens,2,Green / Recreation,3,Green / Recreation,True
+sydney,Employment,,3,Industrial,0,,True
+sydney,General Industrial,,379,Industrial,0,,True
+sydney,General Industrial, ,1,Industrial,5,Industrial,True
+sydney,General Industrial,<Null>,7,Industrial,29,Industrial,True
+sydney,Heavy Industrial,,8,Industrial,0,,True
+sydney,Infrastructure,Bus Depot,2,Industrial,0,,True
+sydney,Infrastructure,Council Depot,3,Industrial,4,Industrial,True
+sydney,Infrastructure,Depot,9,Industrial,6,Industrial,True
+sydney,Infrastructure,Depots,2,Industrial,0,,True
+sydney,Infrastructure,Maintenance Depot,4,Industrial,1,Industrial,True
+sydney,Infrastructure,Quarry,1,Industrial,2,Industrial,True
+sydney,Infrastructure,Sydney Water Depot,1,Industrial,1,Industrial,True
+sydney,Light Industrial,,14,Industrial,0,,True
+sydney,Light Industrial,<Null>,3,Industrial,10,Industrial,True
+sydney,Port and Employment,,6,Industrial,0,,True
+sydney,Special Activities,Bus Depot,1,Industrial,0,,True
+sydney,Special Activities,Quarry,1,Industrial,13,Industrial,True
+sydney,Working Waterfront,,25,Industrial,0,,True
+sydney,Infrastructure,Cemetery,32,Institutional / Civic,27,Institutional / Civic,True
+sydney,Infrastructure,"Cemetery, Church, Seniors Housing",1,Institutional / Civic,2,Institutional / Civic,True
+sydney,Infrastructure,Child Care Centre,1,Institutional / Civic,0,,True
+sydney,Infrastructure,Childcare Centre,5,Institutional / Civic,1,Institutional / Civic,True
+sydney,Infrastructure,Commonwealth Government,3,Institutional / Civic,2,Institutional / Civic,True
+sydney,Infrastructure,Commonwealth Uses,1,Institutional / Civic,0,,True
+sydney,Infrastructure,Community Facilities,15,Institutional / Civic,4,Institutional / Civic,True
+sydney,Infrastructure,Community Facility,53,Institutional / Civic,6,Institutional / Civic,True
+sydney,Infrastructure,Community Purposes,1,Institutional / Civic,0,,True
+sydney,Infrastructure,Convent and Hospital,1,Institutional / Civic,2,Institutional / Civic,True
+sydney,Infrastructure,Correction Centre,1,Institutional / Civic,14,Institutional / Civic,True
+sydney,Infrastructure,Correctional Centre,5,Institutional / Civic,47,Institutional / Civic,True
+sydney,Infrastructure,Defence,23,Institutional / Civic,1484,Institutional / Civic,True
+sydney,Infrastructure,Defence Land,1,Institutional / Civic,1,Institutional / Civic,True
+sydney,Infrastructure,Education Establishment,1,Institutional / Civic,1,Institutional / Civic,True
+sydney,Infrastructure,Educational Establishment,548,Institutional / Civic,635,Institutional / Civic,True
+sydney,Infrastructure,Educational Establishment & Place of Public Worsh*,11,Institutional / Civic,2,Institutional / Civic,True
+sydney,Infrastructure,Educational Establishment & Place of Worship,36,Institutional / Civic,30,Institutional / Civic,True
+sydney,Infrastructure,Educational Establishment and Place of Public Worship,1,Institutional / Civic,3,Institutional / Civic,True
+sydney,Infrastructure,Educational Establishment/ Place of Public Worship,1,Institutional / Civic,1,Institutional / Civic,True
+sydney,Infrastructure,Educational Establishments,63,Institutional / Civic,24,Institutional / Civic,True
+sydney,Infrastructure,Emergency Services,2,Institutional / Civic,2,Institutional / Civic,True
+sydney,Infrastructure,Emergency Services Facilities,11,Institutional / Civic,0,,True
+sydney,Infrastructure,Emergency Services Facility,17,Institutional / Civic,1,Institutional / Civic,True
+sydney,Infrastructure,"Emergency Services Facility, Admin Building",1,Institutional / Civic,1,Institutional / Civic,True
+sydney,Infrastructure,Fire Station,1,Institutional / Civic,0,,True
+sydney,Infrastructure,Function Centre,1,Institutional / Civic,1,Institutional / Civic,True
+sydney,Infrastructure,Health Service Facility,1,Institutional / Civic,1,Institutional / Civic,True
+sydney,Infrastructure,Health Services & Educational Facilities,2,Institutional / Civic,5,Institutional / Civic,True
+sydney,Infrastructure,Health Services Facilities,38,Institutional / Civic,55,Institutional / Civic,True
+sydney,Infrastructure,Health Services Facility,8,Institutional / Civic,11,Institutional / Civic,True
+sydney,Infrastructure,Hospital,19,Institutional / Civic,22,Institutional / Civic,True
+sydney,Infrastructure,Information and Education Facilities,1,Institutional / Civic,1,Institutional / Civic,True
+sydney,Infrastructure,Information and Education Facility,1,Institutional / Civic,0,,True
+sydney,Infrastructure,Navigation & Emergency Response Facility,1,Institutional / Civic,0,,True
+sydney,Infrastructure,Place of Public Worship,121,Institutional / Civic,7,Institutional / Civic,True
+sydney,Infrastructure,Place of Public Worship & Educational Establishmnt,1,Institutional / Civic,0,,True
+sydney,Infrastructure,Place of Public Worship and Cemetery,2,Institutional / Civic,0,,True
+sydney,Infrastructure,Place of Worship,6,Institutional / Civic,1,Institutional / Civic,True
+sydney,Infrastructure,Place of Worship and Educational Establishments,4,Institutional / Civic,0,,True
+sydney,Infrastructure,Police,1,Institutional / Civic,0,,True
+sydney,Infrastructure,Post Office,1,Institutional / Civic,0,,True
+sydney,Infrastructure,Public Admin Building,1,Institutional / Civic,0,,True
+sydney,Infrastructure,Public Administration Building,17,Institutional / Civic,4,Institutional / Civic,True
+sydney,Infrastructure,Public Administration Buildings,3,Institutional / Civic,0,,True
+sydney,Infrastructure,Public Administration Buildings and Depot,1,Institutional / Civic,1,Institutional / Civic,True
+sydney,Infrastructure,Remand Centre & Hospital,1,Institutional / Civic,3,Institutional / Civic,True
+sydney,Infrastructure,Research Facility,1,Institutional / Civic,3,Institutional / Civic,True
+sydney,Infrastructure,Research Station,2,Institutional / Civic,3,Institutional / Civic,True
+sydney,Infrastructure,School,6,Institutional / Civic,2,Institutional / Civic,True
+sydney,Infrastructure,"School, Church",1,Institutional / Civic,4,Institutional / Civic,True
+sydney,Infrastructure,Seniors Housing,10,Institutional / Civic,6,Institutional / Civic,True
+sydney,Infrastructure,Youth Centre,2,Institutional / Civic,1,Institutional / Civic,True
+sydney,Special Activities,Cemetery,28,Institutional / Civic,125,Institutional / Civic,True
+sydney,Special Activities,Cemetery and Crematorium,2,Institutional / Civic,13,Institutional / Civic,True
+sydney,Special Activities,Childcare Centre,1,Institutional / Civic,0,,True
+sydney,Special Activities,Commercial premises; Community facilities,1,Institutional / Civic,0,,True
+sydney,Special Activities,Commonwealth Activities,2,Institutional / Civic,0,,True
+sydney,Special Activities,Commonwealth Purposes,1,Institutional / Civic,5,Institutional / Civic,True
+sydney,Special Activities,Community Facility,1,Institutional / Civic,2,Institutional / Civic,True
+sydney,Special Activities,Correctional Centre,1,Institutional / Civic,13,Institutional / Civic,True
+sydney,Special Activities,Crematorium,1,Institutional / Civic,2,Institutional / Civic,True
+sydney,Special Activities,Defence,8,Institutional / Civic,90,Institutional / Civic,True
+sydney,Special Activities,Education Agriculture,3,Institutional / Civic,242,Institutional / Civic,True
+sydney,Special Activities,Educational Establishment,6,Institutional / Civic,103,Institutional / Civic,True
+sydney,Special Activities,Educational Establishment/Place of Public Worship,1,Institutional / Civic,1,Institutional / Civic,True
+sydney,Special Activities,Emergency Services Facility,1,Institutional / Civic,0,,True
+sydney,Special Activities,Health Services Facilities,8,Institutional / Civic,7,Institutional / Civic,True
+sydney,Special Activities,Health Services Facility,1,Institutional / Civic,1,Institutional / Civic,True
+sydney,Special Activities,Health Services Facility and Educational Establishment,1,Institutional / Civic,9,Institutional / Civic,True
+sydney,Special Activities,Hospital,1,Institutional / Civic,1,Institutional / Civic,True
+sydney,Special Activities,Management Plan North Head School of Artillery,12,Institutional / Civic,5,Institutional / Civic,True
+sydney,Special Activities,Place of Public Worship,6,Institutional / Civic,2,Institutional / Civic,True
+sydney,Special Activities,Places of Public Worship,1,Institutional / Civic,2,Institutional / Civic,True
+sydney,Special Activities,Seniors Housing,4,Institutional / Civic,2,Institutional / Civic,True
+sydney,Special Activities,Villawood Immigration Detention Centre,2,Institutional / Civic,4,Institutional / Civic,True
+sydney,Special Purposes Zone - Comminity,,1,Institutional / Civic,0,,True
+sydney,Business Zone - Mixed Use,,13,Mixed Use,0,,True
+sydney,Mixed Use,,400,Mixed Use,0,,True
+sydney,Mixed Use, ,2,Mixed Use,1,Mixed Use,True
+sydney,Mixed Use,Community Facility,1,Mixed Use,0,,True
+sydney,Residential – Business,,1,Mixed Use,0,,True
+sydney,Deferred Matter,,51,Other,0,,True
+sydney,Infrastructure,,15,Other,0,,True
+sydney,Infrastructure,Heritage Item,1,Other,0,,True
+sydney,Infrastructure,Public Facilities,1,Other,0,,True
+sydney,Infrastructure,Public Purposes Corridor,6,Other,30,Other,True
+sydney,Infrastructure,Public Square,1,Other,0,,True
+sydney,Infrastructure,SHFT,2,Other,3,Other,True
+sydney,Infrastructure,Signal Station,1,Other,0,,True
+sydney,Infrastructure,Special Use ,1,Other,0,,True
+sydney,Infrastructure,Sydney Harbour Federation Trust,2,Other,13,Other,True
+sydney,Infrastructure,Wharf Facilities,1,Other,0,,True
+sydney,Special Activities,,15,Other,0,,True
+sydney,Special Activities,Registered Club,1,Other,0,,True
+sydney,Special Uses,,1,Other,0,,True
+sydney,Unzoned,,2,Other,0,,True
+sydney,Unzoned Land,,92,Other,0,,True
+sydney,Environmental Living,,828,Residential,0,,True
+sydney,Environmental Living, ,2,Residential,74,Residential,True
+sydney,General Residential,,354,Residential,0,,True
+sydney,General Residential, ,2,Residential,20,Residential,True
+sydney,High Density Residential,,822,Residential,0,,True
+sydney,High Density Residential,<Null>,1,Residential,3,Residential,True
+sydney,Infrastructure,Boarding House,1,Residential,0,,True
+sydney,Large Lot Residential,,50,Residential,0,,True
+sydney,Low Density Residential,,1255,Residential,0,,True
+sydney,Low Density Residential, ,5,Residential,41,Residential,True
+sydney,Low Density Residential,<Null>,1,Residential,0,,True
+sydney,Low Density Residential,Low Density,4,Residential,4,Residential,True
+sydney,Medium Density Residential,,1414,Residential,0,,True
+sydney,Medium Density Residential, ,17,Residential,15,Residential,True
+sydney,Medium Density Residential,Medium Density,12,Residential,35,Residential,True
+sydney,Residential,,7,Residential,0,,True
+sydney,Residential (Low Density),,5,Residential,0,,True
+sydney,Residential Zone - Medium Density Residential,,3,Residential,0,,True
+sydney,Infrastructure,Air Transport Facilities,4,Transportation,4,Transportation,True
+sydney,Infrastructure,Air Transport Facility,2,Transportation,133,Transportation,True
+sydney,Infrastructure,Airport,4,Transportation,188,Transportation,True
+sydney,Infrastructure,Boating Facilities,5,Transportation,0,,True
+sydney,Infrastructure,Bridge,2,Transportation,0,,True
+sydney,Infrastructure,Bringelly Road,2,Transportation,13,Transportation,True
+sydney,Infrastructure,Bus Only Link,1,Transportation,0,,True
+sydney,Infrastructure,Car Park,29,Transportation,3,Transportation,True
+sydney,Infrastructure,Car Park/ Community Facility,1,Transportation,0,,True
+sydney,Infrastructure,Classified Road,443,Transportation,1512,Transportation,True
+sydney,Infrastructure,Classified Road & Strategic Bus Corridor,1,Transportation,1,Transportation,True
+sydney,Infrastructure,Classified Road - Acquisition,1,Transportation,3,Transportation,True
+sydney,Infrastructure,Footpath,1,Transportation,0,,True
+sydney,Infrastructure,Future Road,4,Transportation,39,Transportation,True
+sydney,Infrastructure,Future Road Corridor,3,Transportation,1,Transportation,True
+sydney,Infrastructure,Future Transport Corridor,2,Transportation,47,Transportation,True
+sydney,Infrastructure,Light Rail Stabling Faci*,1,Transportation,1,Transportation,True
+sydney,Infrastructure,Local  Road,2,Transportation,0,,True
+sydney,Infrastructure,Local Road,188,Transportation,123,Transportation,True
+sydney,Infrastructure,Local Road Widening,84,Transportation,3,Transportation,True
+sydney,Infrastructure,Motorway,1,Transportation,3,Transportation,True
+sydney,Infrastructure,Northern Road,2,Transportation,33,Transportation,True
+sydney,Infrastructure,Passenger Transport Facility,2,Transportation,1,Transportation,True
+sydney,Infrastructure,Public Administration Buildings and Car Park,1,Transportation,0,,True
+sydney,Infrastructure,Public Transport Corridor,26,Transportation,3,Transportation,True
+sydney,Infrastructure,Rail,4,Transportation,43,Transportation,True
+sydney,Infrastructure,Rail Corridor,4,Transportation,16,Transportation,True
+sydney,Infrastructure,Rail Infrastructure,4,Transportation,14,Transportation,True
+sydney,Infrastructure,Rail Infrastructure Facilities,12,Transportation,22,Transportation,True
+sydney,Infrastructure,Rail Infrastructure Facility,33,Transportation,48,Transportation,True
+sydney,Infrastructure,Railway,77,Transportation,133,Transportation,True
+sydney,Infrastructure,Railway Corridor,7,Transportation,34,Transportation,True
+sydney,Infrastructure,Railway Infrastructure,4,Transportation,9,Transportation,True
+sydney,Infrastructure,Railway Infrastructure Facilities,7,Transportation,17,Transportation,True
+sydney,Infrastructure,Railway Infrastructure Facility,2,Transportation,42,Transportation,True
+sydney,Infrastructure,Railways,20,Transportation,16,Transportation,True
+sydney,Infrastructure,Road,43,Transportation,232,Transportation,True
+sydney,Infrastructure,Road Infrastructure,2,Transportation,0,,True
+sydney,Infrastructure,Road Infrastructure Facility,13,Transportation,86,Transportation,True
+sydney,Infrastructure,Road and Traffic Facilities,3,Transportation,10,Transportation,True
+sydney,Infrastructure,SP2 Local Road,1,Transportation,0,,True
+sydney,Infrastructure,Strategic Bus Corridor,9,Transportation,0,,True
+sydney,Infrastructure,Transport Depot,3,Transportation,1,Transportation,True
+sydney,Infrastructure,Transport Facility,1,Transportation,1,Transportation,True
+sydney,Infrastructure,Unclassified Regional Road,3,Transportation,0,,True
+sydney,Infrastructure,Water Supply System & Strategic Bus Corridor,1,Transportation,5,Transportation,True
+sydney,Infrastructure,Western Sydney International (Nancy-Bird Walton) *,7,Transportation,410,Transportation,True
+sydney,Infrastructure,Wharf or Boating Facilities,1,Transportation,0,,True
+sydney,Railways,,1,Transportation,0,,True
+sydney,Road and Road Widening,,5,Transportation,0,,True
+sydney,Special Activities,Aerodrome,2,Transportation,91,Transportation,True
+sydney,Special Activities,Canal Road Arts Precinct,2,Transportation,0,,True
+sydney,Special Activities,Car Park,2,Transportation,0,,True
+sydney,Drainage,,4,Utilities,0,,True
+sydney,Infrastructure,Australia Post,2,Utilities,0,,True
+sydney,Infrastructure,Drainage,372,Utilities,203,Utilities,True
+sydney,Infrastructure,Drainage and Flood Mitigation Works,2,Utilities,0,,True
+sydney,Infrastructure,Elect Trans & Distrib,1,Utilities,0,,True
+sydney,Infrastructure,Electrical Substation,2,Utilities,0,,True
+sydney,Infrastructure,Electricity,3,Utilities,3,Utilities,True
+sydney,Infrastructure,Electricity Distribution,12,Utilities,1,Utilities,True
+sydney,Infrastructure,Electricity Generating Works,26,Utilities,3,Utilities,True
+sydney,Infrastructure,Electricity Generation Works,1,Utilities,0,,True
+sydney,Infrastructure,Electricity Sub Station,1,Utilities,0,,True
+sydney,Infrastructure,Electricity Substation,19,Utilities,22,Utilities,True
+sydney,Infrastructure,Electricity Supply,12,Utilities,6,Utilities,True
+sydney,Infrastructure,Electricity Transmission,18,Utilities,7,Utilities,True
+sydney,Infrastructure,Electricity Transmission & Distribution,6,Utilities,11,Utilities,True
+sydney,Infrastructure,Electricity Transmission and Distribution,65,Utilities,15,Utilities,True
+sydney,Infrastructure,Electricity Transmission or Distribution,3,Utilities,10,Utilities,True
+sydney,Infrastructure,Electricity Transmission or Distribution Network,15,Utilities,3,Utilities,True
+sydney,Infrastructure,ElectricityGeneratingWork,2,Utilities,0,,True
+sydney,Infrastructure,Gas Transmission and Distribution,1,Utilities,0,,True
+sydney,Infrastructure,Infrastructure (Electricity),1,Utilities,0,,True
+sydney,Infrastructure,Local Drainage,123,Utilities,68,Utilities,True
+sydney,Infrastructure,Pipeline,2,Utilities,1,Utilities,True
+sydney,Infrastructure,Public Utility Undertaking,5,Utilities,1,Utilities,True
+sydney,Infrastructure,Pumping Station,1,Utilities,0,,True
+sydney,Infrastructure,Sewage Pump Station,1,Utilities,0,,True
+sydney,Infrastructure,Sewage Pumping Station,1,Utilities,0,,True
+sydney,Infrastructure,Sewage Reticulation System,2,Utilities,0,,True
+sydney,Infrastructure,Sewage System,1,Utilities,0,,True
+sydney,Infrastructure,Sewage Treatment Plant,5,Utilities,8,Utilities,True
+sydney,Infrastructure,Sewerage,14,Utilities,0,,True
+sydney,Infrastructure,Sewerage Pumping Station,1,Utilities,0,,True
+sydney,Infrastructure,Sewerage System,113,Utilities,81,Utilities,True
+sydney,Infrastructure,Sewerage Systems,3,Utilities,0,,True
+sydney,Infrastructure,Sewerage Treatment Plant,4,Utilities,15,Utilities,True
+sydney,Infrastructure,Stormwater Management,16,Utilities,5,Utilities,True
+sydney,Infrastructure,Stormwater Management System,18,Utilities,31,Utilities,True
+sydney,Infrastructure,Stormwater Management Systems,16,Utilities,6,Utilities,True
+sydney,Infrastructure,Stormwater System,8,Utilities,0,,True
+sydney,Infrastructure,Stormwater Systems,1,Utilities,0,,True
+sydney,Infrastructure,Substation,7,Utilities,0,,True
+sydney,Infrastructure,Telecommunications,16,Utilities,1,Utilities,True
+sydney,Infrastructure,Telecommunications Facilities,6,Utilities,0,,True
+sydney,Infrastructure,Telecommunications Facility,11,Utilities,0,,True
+sydney,Infrastructure,Telephone Exchange,4,Utilities,0,,True
+sydney,Infrastructure,Trunk Drainage,2,Utilities,5,Utilities,True
+sydney,Infrastructure,Utility (substation),1,Utilities,0,,True
+sydney,Infrastructure,Waste & Resource Management Facilities,1,Utilities,0,,True
+sydney,Infrastructure,Waste Management Facility,3,Utilities,15,Utilities,True
+sydney,Infrastructure,Waste Transfer Station,1,Utilities,2,Utilities,True
+sydney,Infrastructure,Waste or Resource Management Facility,2,Utilities,55,Utilities,True
+sydney,Infrastructure,Water,10,Utilities,0,,True
+sydney,Infrastructure,Water Infrastructure,9,Utilities,4,Utilities,True
+sydney,Infrastructure,Water Recycling Facility,1,Utilities,1,Utilities,True
+sydney,Infrastructure,Water Reservoir,1,Utilities,1,Utilities,True
+sydney,Infrastructure,Water Reticulation System,2,Utilities,1,Utilities,True
+sydney,Infrastructure,Water Sewer and Drainage,13,Utilities,0,,True
+sydney,Infrastructure,Water Storage Facility,7,Utilities,2,Utilities,True
+sydney,Infrastructure,Water Supply,71,Utilities,7,Utilities,True
+sydney,Infrastructure,Water Supply System,207,Utilities,338,Utilities,True
+sydney,Infrastructure,Water Supply Systems,5,Utilities,0,,True
+sydney,Infrastructure,Water and Sewerage,13,Utilities,0,,True
+sydney,Special Activities,Sewerage System,1,Utilities,1,Utilities,True
+sydney,Special Activities,Waste Management Facility,2,Utilities,7,Utilities,True
+sydney,Special Activities,Waste Recycling,1,Utilities,8,Utilities,True
+sydney,Special Activities,Water Supply System,1,Utilities,1,Utilities,True
+sydney,Special Purposes Zone - Infrastructure,,2,Utilities,0,,True
+sydney,Transition,,25,Vacant / Reserve,0,,True
+sydney,Urban,,3,Vacant / Reserve,0,,True
+sydney,Urban Development, ,6,Vacant / Reserve,48,Vacant / Reserve,True
+sydney,Infrastructure,Detention Basin,1,Water,0,,True
+sydney,Natural Waterways,,197,Water,0,,True
+sydney,Recreational Waterways,,42,Water,0,,True
+sydney,Waterway,,1,Water,0,,True
+sydney,Working Waterways,,2,Water,0,,True

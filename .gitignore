@@ -1,0 +1,45 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Local evaluation outputs and materialized artifacts.
+results/repro_*/
+results/*_shards/
+results/repro_logs/
+results/*_rerun*/
+results/*/aligned/
+results/*/predictions/
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+
+# Data are distributed on Kaggle and materialized locally for reproduction.
+data/tasks/*
+!data/tasks/README.md
+splits/**/*.json.gz
+embeddings/packages/*
+!embeddings/packages/README.md
+baselines/artifacts/*
+!baselines/artifacts/README.md
+baselines/checkpoints/*
+!baselines/checkpoints/README.md
+
+# Local raw inputs and caches.
+cache/
+.cache/
+external_raw/
+global_0.1_degree_representation/
+global_0.1_degree_tiff_all/
+local_only/
+logs/

@@ -1,0 +1,11 @@
+model,model_label,normalized_score,task_count,run_count,coverage_ratio
+calliper,CaLLiPer,0.8749743571364326,8,64,1.0
+aether,AETHER,0.8132309925506768,8,64,1.0
+alphaearth,AlphaEarth,0.7925402497144558,8,64,1.0
+space2vec,Space2Vec,0.7796118267969601,8,64,1.0
+tessera,TESSERA,0.7710769760847518,8,64,1.0
+cityfm,CityFM,0.5805869760284046,8,64,1.0
+urban2vec,Urban2Vec,0.4564992539621808,8,64,1.0
+place2vec,Place2Vec,0.30489621036005365,8,64,1.0
+muse,MuseCL,0.13189820441206082,8,64,1.0
+satclip,SatCLIP,0.07111344690639165,8,64,1.0

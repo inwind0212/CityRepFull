@@ -1,0 +1,421 @@
+{
+  "models": [
+    {
+      "model": "sphere2vec_fixed",
+      "model_label": "PE",
+      "type_code": "L",
+      "embedding_rows": 64,
+      "cities": [
+        "london",
+        "new_york",
+        "singapore",
+        "sydney",
+        "mumbai",
+        "nairobi",
+        "jakarta",
+        "cape_town"
+      ],
+      "tasks": [
+        "landuse",
+        "road_density",
+        "population",
+        "age_distribution",
+        "gdp",
+        "nightlight",
+        "pm25",
+        "lst_day_mean"
+      ],
+      "source_roles": [
+        "position_encoding_entity_table"
+      ],
+      "artifact_path": "baselines/artifacts/sphere2vec_fixed",
+      "external_dependency_note": "Deterministic position embedding baseline generated at task coordinates.",
+      "modalities": [
+        "location"
+      ],
+      "synthetic_demo_rows": 1,
+      "release_asset": "frozen_embeddings_only"
+    },
+    {
+      "model": "place2vec",
+      "model_label": "Place2Vec",
+      "type_code": "P",
+      "embedding_rows": 64,
+      "cities": [
+        "london",
+        "new_york",
+        "singapore",
+        "sydney",
+        "mumbai",
+        "nairobi",
+        "jakarta",
+        "cape_town"
+      ],
+      "tasks": [
+        "landuse",
+        "road_density",
+        "population",
+        "age_distribution",
+        "gdp",
+        "nightlight",
+        "pm25",
+        "lst_day_mean"
+      ],
+      "source_roles": [
+        "poi_h3_region_table"
+      ],
+      "artifact_path": "baselines/artifacts/place2vec",
+      "external_dependency_note": "",
+      "modalities": [
+        "poi"
+      ],
+      "synthetic_demo_rows": 1,
+      "release_asset": "frozen_embeddings_only"
+    },
+    {
+      "model": "space2vec",
+      "model_label": "Space2Vec",
+      "type_code": "LP",
+      "embedding_rows": 64,
+      "cities": [
+        "london",
+        "new_york",
+        "singapore",
+        "sydney",
+        "mumbai",
+        "nairobi",
+        "jakarta",
+        "cape_town"
+      ],
+      "tasks": [
+        "landuse",
+        "road_density",
+        "population",
+        "age_distribution",
+        "gdp",
+        "nightlight",
+        "pm25",
+        "lst_day_mean"
+      ],
+      "source_roles": [
+        "coordinate_encoder_task_specific_raster",
+        "landuse_point_coordinate_encoder_table"
+      ],
+      "artifact_path": "baselines/artifacts/space2vec",
+      "external_dependency_note": "",
+      "modalities": [
+        "location",
+        "poi"
+      ],
+      "synthetic_demo_rows": 1,
+      "release_asset": "frozen_embeddings_only"
+    },
+    {
+      "model": "calliper",
+      "model_label": "CaLLiPer",
+      "type_code": "LP",
+      "embedding_rows": 64,
+      "cities": [
+        "london",
+        "new_york",
+        "singapore",
+        "sydney",
+        "mumbai",
+        "nairobi",
+        "jakarta",
+        "cape_town"
+      ],
+      "tasks": [
+        "landuse",
+        "road_density",
+        "population",
+        "age_distribution",
+        "gdp",
+        "nightlight",
+        "pm25",
+        "lst_day_mean"
+      ],
+      "source_roles": [
+        "coordinate_encoder_task_specific_raster",
+        "landuse_point_coordinate_encoder_table"
+      ],
+      "artifact_path": "baselines/artifacts/calliper",
+      "external_dependency_note": "",
+      "modalities": [
+        "location",
+        "poi"
+      ],
+      "synthetic_demo_rows": 1,
+      "release_asset": "frozen_embeddings_only"
+    },
+    {
+      "model": "cityfm",
+      "model_label": "CityFM",
+      "type_code": "PO",
+      "embedding_rows": 64,
+      "cities": [
+        "london",
+        "new_york",
+        "singapore",
+        "sydney",
+        "mumbai",
+        "nairobi",
+        "jakarta",
+        "cape_town"
+      ],
+      "tasks": [
+        "landuse",
+        "road_density",
+        "population",
+        "age_distribution",
+        "gdp",
+        "nightlight",
+        "pm25",
+        "lst_day_mean"
+      ],
+      "source_roles": [
+        "native_h3_region_table"
+      ],
+      "artifact_path": "baselines/artifacts/cityfm",
+      "external_dependency_note": "",
+      "modalities": [
+        "poi",
+        "openstreetmap"
+      ],
+      "synthetic_demo_rows": 1,
+      "release_asset": "frozen_embeddings_only"
+    },
+    {
+      "model": "urban2vec",
+      "model_label": "Urban2Vec",
+      "type_code": "PS",
+      "embedding_rows": 64,
+      "cities": [
+        "london",
+        "new_york",
+        "singapore",
+        "sydney",
+        "mumbai",
+        "nairobi",
+        "jakarta",
+        "cape_town"
+      ],
+      "tasks": [
+        "landuse",
+        "road_density",
+        "population",
+        "age_distribution",
+        "gdp",
+        "nightlight",
+        "pm25",
+        "lst_day_mean"
+      ],
+      "source_roles": [
+        "region_embedding_streetview_plus_poi128"
+      ],
+      "artifact_path": "baselines/artifacts/urban2vec",
+      "external_dependency_note": "Urban2Vec uses street-view imagery and POIs; it does not use a remote-sensing input in this reproduction.",
+      "modalities": [
+        "poi",
+        "street_view"
+      ],
+      "synthetic_demo_rows": 1,
+      "release_asset": "frozen_embeddings_only"
+    },
+    {
+      "model": "muse",
+      "model_label": "MuseCL",
+      "type_code": "PRS",
+      "embedding_rows": 64,
+      "cities": [
+        "london",
+        "new_york",
+        "singapore",
+        "sydney",
+        "mumbai",
+        "nairobi",
+        "jakarta",
+        "cape_town"
+      ],
+      "tasks": [
+        "landuse",
+        "road_density",
+        "population",
+        "age_distribution",
+        "gdp",
+        "nightlight",
+        "pm25",
+        "lst_day_mean"
+      ],
+      "source_roles": [
+        "region_embedding_streetview_remote_sensing_poi"
+      ],
+      "artifact_path": "baselines/artifacts/muse",
+      "external_dependency_note": "MuseCL uses street-view imagery, remote-sensing imagery, and POI inputs; the release provides the frozen region embeddings, not raw inputs.",
+      "modalities": [
+        "poi",
+        "remote_sensing",
+        "street_view"
+      ],
+      "synthetic_demo_rows": 1,
+      "release_asset": "frozen_embeddings_only"
+    },
+    {
+      "model": "satclip",
+      "model_label": "SatCLIP",
+      "type_code": "LR",
+      "embedding_rows": 64,
+      "cities": [
+        "london",
+        "new_york",
+        "singapore",
+        "sydney",
+        "mumbai",
+        "nairobi",
+        "jakarta",
+        "cape_town"
+      ],
+      "tasks": [
+        "landuse",
+        "road_density",
+        "population",
+        "age_distribution",
+        "gdp",
+        "nightlight",
+        "pm25",
+        "lst_day_mean"
+      ],
+      "source_roles": [
+        "coordinate_encoder_task_specific_raster",
+        "landuse_point_coordinate_encoder_table"
+      ],
+      "artifact_path": "baselines/artifacts/satclip",
+      "external_dependency_note": "",
+      "modalities": [
+        "location",
+        "remote_sensing"
+      ],
+      "synthetic_demo_rows": 1,
+      "release_asset": "frozen_embeddings_only"
+    },
+    {
+      "model": "tessera",
+      "model_label": "TESSERA",
+      "type_code": "R",
+      "embedding_rows": 64,
+      "cities": [
+        "london",
+        "new_york",
+        "singapore",
+        "sydney",
+        "mumbai",
+        "nairobi",
+        "jakarta",
+        "cape_town"
+      ],
+      "tasks": [
+        "landuse",
+        "road_density",
+        "population",
+        "age_distribution",
+        "gdp",
+        "nightlight",
+        "pm25",
+        "lst_day_mean"
+      ],
+      "source_roles": [
+        "native_tessera_reference_raster",
+        "task_specific_raster"
+      ],
+      "artifact_path": "baselines/artifacts/tessera",
+      "external_dependency_note": "GeoTessera/API-derived raster representation; prepared city/task exports are provided in the model artifact package.",
+      "modalities": [
+        "remote_sensing"
+      ],
+      "synthetic_demo_rows": 1,
+      "release_asset": "frozen_embeddings_only"
+    },
+    {
+      "model": "alphaearth",
+      "model_label": "AlphaEarth",
+      "type_code": "R",
+      "embedding_rows": 64,
+      "cities": [
+        "london",
+        "new_york",
+        "singapore",
+        "sydney",
+        "mumbai",
+        "nairobi",
+        "jakarta",
+        "cape_town"
+      ],
+      "tasks": [
+        "landuse",
+        "road_density",
+        "population",
+        "age_distribution",
+        "gdp",
+        "nightlight",
+        "pm25",
+        "lst_day_mean"
+      ],
+      "source_roles": [
+        "native_alphaearth_raster",
+        "task_specific_raster"
+      ],
+      "artifact_path": "baselines/artifacts/alphaearth",
+      "external_dependency_note": "Public raster representation; prepared city/task exports are provided in the model artifact package.",
+      "modalities": [
+        "remote_sensing"
+      ],
+      "synthetic_demo_rows": 1,
+      "release_asset": "frozen_embeddings_only"
+    },
+    {
+      "model": "aether",
+      "model_label": "AETHER",
+      "type_code": "PR",
+      "embedding_rows": 64,
+      "cities": [
+        "london",
+        "new_york",
+        "singapore",
+        "sydney",
+        "mumbai",
+        "nairobi",
+        "jakarta",
+        "cape_town"
+      ],
+      "tasks": [
+        "landuse",
+        "road_density",
+        "population",
+        "age_distribution",
+        "gdp",
+        "nightlight",
+        "pm25",
+        "lst_day_mean"
+      ],
+      "source_roles": [
+        "native_aether_raster",
+        "task_specific_raster"
+      ],
+      "artifact_path": "baselines/artifacts/aether",
+      "external_dependency_note": "AETHER was pretrained for 100 epochs with AlphaEarth pixels and Foursquare POI descriptions using AE-AE and AE-POI contrastive objectives. No CityRep downstream labels, splits, validation results, or benchmark metrics were used for training or checkpoint selection. Frozen exports are included in the data release.",
+      "modalities": [
+        "poi",
+        "remote_sensing"
+      ],
+      "synthetic_demo_rows": 1,
+      "release_asset": "frozen_embeddings_only"
+    }
+  ],
+  "type_code_legend": {
+    "L": "location or coordinate input",
+    "P": "point-of-interest input",
+    "R": "remote-sensing input",
+    "S": "street-view input",
+    "O": "OpenStreetMap/map-entity input"
+  }
+}

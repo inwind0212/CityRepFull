@@ -1,0 +1,28 @@
+name: urban-benchmark
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python>=3.10
+  - geopandas
+  - h3-py
+  - jupyter
+  - matplotlib
+  - nbformat
+  - numpy
+  - pandas
+  - pyarrow
+  - pyproj
+  - pytorch
+  - rasterio
+  - scikit-learn
+  - seaborn
+  - shapely
+  - tqdm
+  - pytest
+  - pip
+  - pip:
+      - easydict
+      - kaggle
+      - mlcroissant==1.1.0
+

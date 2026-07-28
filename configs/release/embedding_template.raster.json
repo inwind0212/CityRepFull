@@ -1,0 +1,16 @@
+{
+  "model": "example_raster_model",
+  "model_label": "ExampleRasterModel",
+  "city": "example_city",
+  "task": "example_task",
+  "task_id": "example_city.example_task.2026",
+  "embedding_source_type": "raster",
+  "embedding_config": {
+    "type": "raster",
+    "path": "baselines/artifacts/example_raster_model/example_city/example_task_embeddings.tif",
+    "name": "ExampleRasterModel"
+  },
+  "source_role": "native_or_task_specific_raster",
+  "alignment_policy": "task samples read from the embedding raster by matched cell or coordinate sampling",
+  "available": true
+}

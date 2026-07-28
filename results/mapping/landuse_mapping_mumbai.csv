@@ -1,0 +1,30 @@
+city,source_class,source_detail,mapped_group
+mumbai,Area Under SPA,,Vacant / Reserve
+mumbai,Cemetery,,Green / Recreation
+mumbai,Commercial Activities,,Commercial
+mumbai,Communication,,Utilities
+mumbai,Educational Amenities,,Institutional / Civic
+mumbai,Government Office,,Institutional / Civic
+mumbai,Industrial Use,,Industrial
+mumbai,Informal Market,,Commercial
+mumbai,Law and Order,,Institutional / Civic
+mumbai,Medical Amenities,,Institutional / Civic
+mumbai,Municipal Chowkies,,Institutional / Civic
+mumbai,Municipal Market,,Commercial
+mumbai,Municipal Office,,Institutional / Civic
+mumbai,Natural Areas,,Green / Recreation
+mumbai,Open Spaces,,Green / Recreation
+mumbai,Other Offices,,Commercial
+mumbai,Primary Activity,,Agriculture / Rural
+mumbai,Public Utility and Facity,,Utilities
+mumbai,Residential,,Residential
+mumbai,Slum / Cluster,,Residential
+mumbai,Social Amenities,,Institutional / Civic
+mumbai,Swimming Pool,,Green / Recreation
+mumbai,Town Duty / Octroi Office,,Utilities
+mumbai,Transport,,Transportation
+mumbai,Unclassified,,Other
+mumbai,Under Construction,,Vacant / Reserve
+mumbai,Urban Villages,,Residential
+mumbai,Vacant,,Vacant / Reserve
+mumbai,Water,,Water

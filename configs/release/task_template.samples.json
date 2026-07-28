@@ -1,0 +1,12 @@
+{
+  "task_id": "example_city.example_task.2026",
+  "task_type": "classification",
+  "source_type": "samples",
+  "samples_path": "tasks/example_city.example_task.2026/samples.parquet",
+  "sample_id_col": "sample_id",
+  "crs": "EPSG:4326",
+  "label_col": "label_id",
+  "class_names": ["class_a", "class_b"],
+  "split_method": "spatial_block",
+  "n_blocks": 10
+}

@@ -1,0 +1,19 @@
+{
+  "model": "example_model",
+  "model_label": "ExampleModel",
+  "city": "example_city",
+  "task": "example_task",
+  "task_id": "example_city.example_task.2026",
+  "embedding_source_type": "region_table",
+  "embedding_config": {
+    "type": "region_table",
+    "path": "baselines/artifacts/example_model/example_city/h3_r8_embeddings.parquet",
+    "name": "ExampleModel",
+    "region_id_col": "h3_id",
+    "region_type": "h3",
+    "h3_resolution": 8
+  },
+  "source_role": "native_h3_region_table",
+  "alignment_policy": "task sample point converted to H3 r8 and looked up in the model region table",
+  "available": true
+}

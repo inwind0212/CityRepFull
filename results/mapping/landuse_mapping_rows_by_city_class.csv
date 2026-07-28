@@ -1,0 +1,74 @@
+city,mapped_group,n_source_rows,city_label
+cape_town,Agriculture / Rural,2,Cape Town
+cape_town,Commercial,9,Cape Town
+cape_town,Green / Recreation,3,Cape Town
+cape_town,Industrial,3,Cape Town
+cape_town,Institutional / Civic,2,Cape Town
+cape_town,Mixed Use,3,Cape Town
+cape_town,Other,2,Cape Town
+cape_town,Residential,8,Cape Town
+cape_town,Transportation,2,Cape Town
+cape_town,Utilities,1,Cape Town
+jakarta,Agriculture / Rural,2,Jakarta
+jakarta,Commercial,3,Jakarta
+jakarta,Green / Recreation,6,Jakarta
+jakarta,Industrial,1,Jakarta
+jakarta,Institutional / Civic,2,Jakarta
+jakarta,Other,1,Jakarta
+jakarta,Residential,1,Jakarta
+jakarta,Transportation,2,Jakarta
+jakarta,Utilities,1,Jakarta
+jakarta,Water,1,Jakarta
+mumbai,Agriculture / Rural,1,Mumbai
+mumbai,Commercial,4,Mumbai
+mumbai,Green / Recreation,4,Mumbai
+mumbai,Industrial,1,Mumbai
+mumbai,Institutional / Civic,7,Mumbai
+mumbai,Other,1,Mumbai
+mumbai,Residential,3,Mumbai
+mumbai,Transportation,1,Mumbai
+mumbai,Utilities,3,Mumbai
+mumbai,Vacant / Reserve,3,Mumbai
+mumbai,Water,1,Mumbai
+nairobi,Commercial,1,Nairobi
+nairobi,Green / Recreation,3,Nairobi
+nairobi,Industrial,1,Nairobi
+nairobi,Institutional / Civic,1,Nairobi
+nairobi,Mixed Use,2,Nairobi
+nairobi,Other,1,Nairobi
+nairobi,Residential,2,Nairobi
+nairobi,Transportation,1,Nairobi
+nairobi,Vacant / Reserve,1,Nairobi
+nairobi,Water,1,Nairobi
+new_york,Commercial,1,New York
+new_york,Green / Recreation,1,New York
+new_york,Industrial,1,New York
+new_york,Institutional / Civic,1,New York
+new_york,Mixed Use,1,New York
+new_york,Residential,3,New York
+new_york,Transportation,2,New York
+new_york,Vacant / Reserve,1,New York
+singapore,Agriculture / Rural,1,Singapore
+singapore,Commercial,2,Singapore
+singapore,Green / Recreation,5,Singapore
+singapore,Industrial,6,Singapore
+singapore,Institutional / Civic,4,Singapore
+singapore,Mixed Use,5,Singapore
+singapore,Other,1,Singapore
+singapore,Residential,1,Singapore
+singapore,Transportation,5,Singapore
+singapore,Utilities,1,Singapore
+singapore,Vacant / Reserve,1,Singapore
+singapore,Water,1,Singapore
+sydney,Agriculture / Rural,7,Sydney
+sydney,Commercial,26,Sydney
+sydney,Green / Recreation,30,Sydney
+sydney,Industrial,18,Sydney
+sydney,Institutional / Civic,77,Sydney
+sydney,Mixed Use,5,Sydney
+sydney,Other,16,Sydney
+sydney,Residential,18,Sydney
+sydney,Transportation,53,Sydney
+sydney,Utilities,67,Sydney
+sydney,Vacant / Reserve,3,Sydney
+sydney,Water,5,Sydney

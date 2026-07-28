@@ -1,0 +1,23 @@
+city,source_class,source_detail,prepared_count,mapped_group,release_sample_count,release_labels,explicit_mapping
+cape_town,Limited Use Zone,,1109,Other,1884,Other,True
+cape_town,,,9139,Other,21037,Other,True
+jakarta,0,,79,Other,80,Other,True
+mumbai,Unclassified,,195,Other,0,,True
+nairobi,unknown,,6470,Other,7304,Other,True
+singapore,SPECIAL USE,,61,Other,6027,Other,True
+sydney,Deferred Matter,,51,Other,0,,True
+sydney,Infrastructure,,15,Other,0,,True
+sydney,Infrastructure,Heritage Item,1,Other,0,,True
+sydney,Infrastructure,Public Facilities,1,Other,0,,True
+sydney,Infrastructure,Public Purposes Corridor,6,Other,30,Other,True
+sydney,Infrastructure,Public Square,1,Other,0,,True
+sydney,Infrastructure,SHFT,2,Other,3,Other,True
+sydney,Infrastructure,Signal Station,1,Other,0,,True
+sydney,Infrastructure,Special Use ,1,Other,0,,True
+sydney,Infrastructure,Sydney Harbour Federation Trust,2,Other,13,Other,True
+sydney,Infrastructure,Wharf Facilities,1,Other,0,,True
+sydney,Special Activities,,15,Other,0,,True
+sydney,Special Activities,Registered Club,1,Other,0,,True
+sydney,Special Uses,,1,Other,0,,True
+sydney,Unzoned,,2,Other,0,,True
+sydney,Unzoned Land,,92,Other,0,,True

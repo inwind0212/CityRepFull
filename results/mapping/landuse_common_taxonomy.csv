@@ -1,0 +1,13 @@
+label_id,mapped_group
+0,Residential
+1,Mixed Use
+2,Commercial
+3,Industrial
+4,Transportation
+5,Green / Recreation
+6,Institutional / Civic
+7,Utilities
+8,Water
+9,Agriculture / Rural
+10,Vacant / Reserve
+11,Other

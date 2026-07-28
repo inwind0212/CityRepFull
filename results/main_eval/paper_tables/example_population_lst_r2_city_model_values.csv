@@ -1,0 +1,161 @@
+task_for_plot,task_title,city_str,city_label,model_str,model_label,R2,R2_std,n_seeds,n_samples
+population,Population $R^2$,london,London,aether,AETHER,0.5969432592391968,0.0418339059968092,5.0,266183
+population,Population $R^2$,london,London,alphaearth,AlphaEarth,0.5826516270637512,0.0528357378879429,5.0,266183
+population,Population $R^2$,london,London,tessera,TESSERA,0.5585396647453308,0.0553218950260775,5.0,266183
+population,Population $R^2$,london,London,cityfm,CityFM,0.2130957245826721,0.0476867648288786,5.0,266183
+population,Population $R^2$,london,London,calliper,CaLLiPer,0.3359276175498962,0.0393705446550273,5.0,266183
+population,Population $R^2$,london,London,space2vec,Space2Vec,0.2736697316169739,0.0393630223194284,5.0,266183
+population,Population $R^2$,london,London,place2vec,Place2Vec,0.2982979297637939,0.0316401590898086,5.0,266183
+population,Population $R^2$,london,London,urban2vec,Urban2Vec,0.3102967619895935,0.0306291105919441,5.0,266183
+population,Population $R^2$,london,London,muse,MuseCL,0.2736397147178649,0.0482739972742316,5.0,266183
+population,Population $R^2$,london,London,satclip,SatCLIP,0.1457292795181274,0.0634301184123088,5.0,266183
+population,Population $R^2$,new_york,New York,aether,AETHER,0.6367036938667298,0.0662645649901511,5.0,114276
+population,Population $R^2$,new_york,New York,alphaearth,AlphaEarth,0.6240234017372132,0.0664150509797754,5.0,114276
+population,Population $R^2$,new_york,New York,tessera,TESSERA,0.6209728240966796,0.0630676121578185,5.0,114276
+population,Population $R^2$,new_york,New York,cityfm,CityFM,0.2692143678665161,0.0558032330822898,5.0,114276
+population,Population $R^2$,new_york,New York,calliper,CaLLiPer,0.4831152915954589,0.0582070345323258,5.0,114276
+population,Population $R^2$,new_york,New York,space2vec,Space2Vec,0.3796361565589904,0.052431828726398,5.0,114276
+population,Population $R^2$,new_york,New York,place2vec,Place2Vec,0.30677490234375,0.0677983245348579,5.0,114276
+population,Population $R^2$,new_york,New York,urban2vec,Urban2Vec,0.3617240667343139,0.0504679922909796,5.0,114276
+population,Population $R^2$,new_york,New York,muse,MuseCL,0.3140122652053833,0.076213126772037,5.0,114276
+population,Population $R^2$,new_york,New York,satclip,SatCLIP,0.1928515434265136,0.056562145403887,5.0,114276
+population,Population $R^2$,singapore,Singapore,aether,AETHER,0.641575813293457,0.0429943289764451,5.0,64172
+population,Population $R^2$,singapore,Singapore,alphaearth,AlphaEarth,0.5828122019767761,0.0137995303841441,5.0,64172
+population,Population $R^2$,singapore,Singapore,tessera,TESSERA,0.5661627769470214,0.0495000283601666,5.0,64172
+population,Population $R^2$,singapore,Singapore,cityfm,CityFM,0.2745215654373169,0.0745278265121414,5.0,64172
+population,Population $R^2$,singapore,Singapore,calliper,CaLLiPer,0.4951184153556823,0.0427241147977012,5.0,64172
+population,Population $R^2$,singapore,Singapore,space2vec,Space2Vec,0.4002356648445129,0.0592370966508892,5.0,64172
+population,Population $R^2$,singapore,Singapore,place2vec,Place2Vec,0.396461021900177,0.0608375015735504,5.0,64172
+population,Population $R^2$,singapore,Singapore,urban2vec,Urban2Vec,0.4218347549438476,0.0717499528405466,5.0,64172
+population,Population $R^2$,singapore,Singapore,muse,MuseCL,0.3235841751098632,0.0431738123389895,5.0,64172
+population,Population $R^2$,singapore,Singapore,satclip,SatCLIP,-0.0143829703330993,0.0401025548978385,5.0,64172
+population,Population $R^2$,sydney,Sydney,aether,AETHER,0.5308619141578674,0.0640835311465687,5.0,416254
+population,Population $R^2$,sydney,Sydney,alphaearth,AlphaEarth,0.5340563774108886,0.0568800289559887,5.0,416254
+population,Population $R^2$,sydney,Sydney,tessera,TESSERA,0.5271988153457642,0.0662393314166135,5.0,416254
+population,Population $R^2$,sydney,Sydney,cityfm,CityFM,0.127126669883728,0.0566530786885796,5.0,416254
+population,Population $R^2$,sydney,Sydney,calliper,CaLLiPer,0.1706804633140564,0.0584527752245057,5.0,416254
+population,Population $R^2$,sydney,Sydney,space2vec,Space2Vec,0.1072630286216735,0.0630087077739184,5.0,416254
+population,Population $R^2$,sydney,Sydney,place2vec,Place2Vec,0.1215049028396606,0.0414533254421051,5.0,416254
+population,Population $R^2$,sydney,Sydney,urban2vec,Urban2Vec,0.1633129358291626,0.0417811330265331,5.0,416254
+population,Population $R^2$,sydney,Sydney,muse,MuseCL,0.2047557592391967,0.0468553401628307,5.0,416254
+population,Population $R^2$,sydney,Sydney,satclip,SatCLIP,0.1488440990447998,0.0433633160729061,5.0,416254
+population,Population $R^2$,mumbai,Mumbai,aether,AETHER,0.7925559282302856,0.0262812527925014,5.0,43522
+population,Population $R^2$,mumbai,Mumbai,alphaearth,AlphaEarth,0.8129549980163574,0.0193831097717589,5.0,43522
+population,Population $R^2$,mumbai,Mumbai,tessera,TESSERA,0.7540286779403687,0.0255736451041971,5.0,43522
+population,Population $R^2$,mumbai,Mumbai,cityfm,CityFM,0.2610069513320923,0.1332672503741848,5.0,43522
+population,Population $R^2$,mumbai,Mumbai,calliper,CaLLiPer,0.2148208022117614,0.0963788131283507,5.0,43522
+population,Population $R^2$,mumbai,Mumbai,space2vec,Space2Vec,0.1124825358390808,0.078473456542982,5.0,43522
+population,Population $R^2$,mumbai,Mumbai,place2vec,Place2Vec,0.3410468459129333,0.0511961866817422,5.0,43522
+population,Population $R^2$,mumbai,Mumbai,urban2vec,Urban2Vec,0.2971108317375183,0.0557621135126557,5.0,43522
+population,Population $R^2$,mumbai,Mumbai,muse,MuseCL,0.4040338039398193,0.0752792698862276,5.0,43522
+population,Population $R^2$,mumbai,Mumbai,satclip,SatCLIP,0.0042647004127502,0.0210702938297177,5.0,43522
+population,Population $R^2$,nairobi,Nairobi,aether,AETHER,0.8075374603271485,0.0213213675628577,5.0,61677
+population,Population $R^2$,nairobi,Nairobi,alphaearth,AlphaEarth,0.8334757328033447,0.026136613806385,5.0,61677
+population,Population $R^2$,nairobi,Nairobi,tessera,TESSERA,0.8055351495742797,0.0180375166641311,5.0,61677
+population,Population $R^2$,nairobi,Nairobi,cityfm,CityFM,0.3526773810386657,0.0948335226722386,5.0,61677
+population,Population $R^2$,nairobi,Nairobi,calliper,CaLLiPer,0.2317790865898132,0.0467341623325117,5.0,61677
+population,Population $R^2$,nairobi,Nairobi,space2vec,Space2Vec,0.2101822257041931,0.0804803865580788,5.0,61677
+population,Population $R^2$,nairobi,Nairobi,place2vec,Place2Vec,0.2812920928001404,0.065732168103361,5.0,61677
+population,Population $R^2$,nairobi,Nairobi,urban2vec,Urban2Vec,0.3696569561958313,0.0955564558249131,5.0,61677
+population,Population $R^2$,nairobi,Nairobi,muse,MuseCL,0.3717951536178588,0.0861216468509265,5.0,61677
+population,Population $R^2$,nairobi,Nairobi,satclip,SatCLIP,0.0100176095962524,0.0556704085391915,5.0,61677
+population,Population $R^2$,jakarta,Jakarta,aether,AETHER,0.7240743160247802,0.016096106783544,5.0,74885
+population,Population $R^2$,jakarta,Jakarta,alphaearth,AlphaEarth,0.755262017250061,0.0210429694474699,5.0,74885
+population,Population $R^2$,jakarta,Jakarta,tessera,TESSERA,0.7708111643791199,0.022138420327826,5.0,74885
+population,Population $R^2$,jakarta,Jakarta,cityfm,CityFM,0.0861123919486999,0.1184612801125474,5.0,74885
+population,Population $R^2$,jakarta,Jakarta,calliper,CaLLiPer,0.3395097613334655,0.071107923715032,5.0,74885
+population,Population $R^2$,jakarta,Jakarta,space2vec,Space2Vec,0.1873679637908935,0.0557490751116612,5.0,74885
+population,Population $R^2$,jakarta,Jakarta,place2vec,Place2Vec,0.2114832997322082,0.0466289299830876,5.0,74885
+population,Population $R^2$,jakarta,Jakarta,urban2vec,Urban2Vec,0.2752415418624878,0.0555286095742064,5.0,74885
+population,Population $R^2$,jakarta,Jakarta,muse,MuseCL,0.1737547278404236,0.02144672169749,5.0,74885
+population,Population $R^2$,jakarta,Jakarta,satclip,SatCLIP,0.0038195490837097,0.0955878421443823,5.0,74885
+population,Population $R^2$,cape_town,Cape Town,aether,AETHER,0.8234350442886352,0.0204746952086338,5.0,167771
+population,Population $R^2$,cape_town,Cape Town,alphaearth,AlphaEarth,0.8333924412727356,0.0213135038650559,5.0,167771
+population,Population $R^2$,cape_town,Cape Town,tessera,TESSERA,0.7935270547866822,0.0179556001851753,5.0,167771
+population,Population $R^2$,cape_town,Cape Town,cityfm,CityFM,0.2418206214904785,0.0775860776649604,5.0,167771
+population,Population $R^2$,cape_town,Cape Town,calliper,CaLLiPer,0.114132285118103,0.0932723635427305,5.0,167771
+population,Population $R^2$,cape_town,Cape Town,space2vec,Space2Vec,0.0705449223518371,0.1150480472721577,5.0,167771
+population,Population $R^2$,cape_town,Cape Town,place2vec,Place2Vec,0.3506365895271301,0.0532111673325103,5.0,167771
+population,Population $R^2$,cape_town,Cape Town,urban2vec,Urban2Vec,0.2747100830078125,0.0632524102577966,5.0,167771
+population,Population $R^2$,cape_town,Cape Town,muse,MuseCL,0.3839135527610778,0.0540033393768249,5.0,167771
+population,Population $R^2$,cape_town,Cape Town,satclip,SatCLIP,0.0409540295600891,0.1230249618487915,5.0,167771
+lst_day_mean,LST $R^2$,london,London,aether,AETHER,0.3389394879341125,0.0454884834797329,5.0,295364
+lst_day_mean,LST $R^2$,london,London,alphaearth,AlphaEarth,0.3450012564659118,0.0575510280140708,5.0,295364
+lst_day_mean,LST $R^2$,london,London,tessera,TESSERA,0.3136393308639526,0.0629509161482812,5.0,295364
+lst_day_mean,LST $R^2$,london,London,cityfm,CityFM,0.3687484502792358,0.0982985985372425,5.0,295364
+lst_day_mean,LST $R^2$,london,London,calliper,CaLLiPer,0.2894759654998779,0.0743488238158586,5.0,295364
+lst_day_mean,LST $R^2$,london,London,space2vec,Space2Vec,0.1235880374908447,0.1327202437346859,5.0,295364
+lst_day_mean,LST $R^2$,london,London,place2vec,Place2Vec,0.1607503771781921,0.0426621320595952,5.0,295364
+lst_day_mean,LST $R^2$,london,London,urban2vec,Urban2Vec,0.0785943150520324,0.0734158578768753,5.0,295364
+lst_day_mean,LST $R^2$,london,London,muse,MuseCL,0.0761298179626464,0.073363028769281,5.0,295364
+lst_day_mean,LST $R^2$,london,London,satclip,SatCLIP,0.0509193897247314,0.0864271574395852,5.0,295364
+lst_day_mean,LST $R^2$,new_york,New York,aether,AETHER,0.2529017686843872,0.0967620120037556,5.0,112433
+lst_day_mean,LST $R^2$,new_york,New York,alphaearth,AlphaEarth,0.3181151866912842,0.1145867866695156,5.0,112433
+lst_day_mean,LST $R^2$,new_york,New York,tessera,TESSERA,0.2380240559577942,0.1620251303564701,5.0,112433
+lst_day_mean,LST $R^2$,new_york,New York,cityfm,CityFM,0.5251381754875183,0.1902735548794747,5.0,112433
+lst_day_mean,LST $R^2$,new_york,New York,calliper,CaLLiPer,0.4139176964759826,0.1057505474446314,5.0,112433
+lst_day_mean,LST $R^2$,new_york,New York,space2vec,Space2Vec,0.3321597337722778,0.080649506677182,5.0,112433
+lst_day_mean,LST $R^2$,new_york,New York,place2vec,Place2Vec,-0.0552884578704834,0.1888290504140493,5.0,112433
+lst_day_mean,LST $R^2$,new_york,New York,urban2vec,Urban2Vec,-0.0673872232437133,0.2234355056792242,5.0,112433
+lst_day_mean,LST $R^2$,new_york,New York,muse,MuseCL,-0.048844563961029,0.1284961697947027,5.0,112433
+lst_day_mean,LST $R^2$,new_york,New York,satclip,SatCLIP,0.119446587562561,0.1952894243623281,5.0,112433
+lst_day_mean,LST $R^2$,singapore,Singapore,aether,AETHER,0.5763065218925476,0.1353668771091734,5.0,70009
+lst_day_mean,LST $R^2$,singapore,Singapore,alphaearth,AlphaEarth,0.5420279383659363,0.1616536456994036,5.0,70009
+lst_day_mean,LST $R^2$,singapore,Singapore,tessera,TESSERA,0.5510112285614014,0.1167095008111015,5.0,70009
+lst_day_mean,LST $R^2$,singapore,Singapore,cityfm,CityFM,0.5301030278205872,0.1444314752119122,5.0,70009
+lst_day_mean,LST $R^2$,singapore,Singapore,calliper,CaLLiPer,0.6042679071426391,0.1181951167166211,5.0,70009
+lst_day_mean,LST $R^2$,singapore,Singapore,space2vec,Space2Vec,0.4519693970680237,0.1260709572150173,5.0,70009
+lst_day_mean,LST $R^2$,singapore,Singapore,place2vec,Place2Vec,0.2860473394393921,0.0816824285470275,5.0,70009
+lst_day_mean,LST $R^2$,singapore,Singapore,urban2vec,Urban2Vec,0.3307664513587952,0.1216867772581938,5.0,70009
+lst_day_mean,LST $R^2$,singapore,Singapore,muse,MuseCL,0.2952689170837402,0.1500344101045724,5.0,70009
+lst_day_mean,LST $R^2$,singapore,Singapore,satclip,SatCLIP,0.1546103239059448,0.228600317279178,5.0,70009
+lst_day_mean,LST $R^2$,sydney,Sydney,aether,AETHER,0.5260261535644531,0.1073640281011655,5.0,592033
+lst_day_mean,LST $R^2$,sydney,Sydney,alphaearth,AlphaEarth,0.5736437201499939,0.0849479117158124,5.0,592033
+lst_day_mean,LST $R^2$,sydney,Sydney,tessera,TESSERA,0.4472007393836975,0.0619080833521856,5.0,592033
+lst_day_mean,LST $R^2$,sydney,Sydney,cityfm,CityFM,0.4047116756439209,0.0845210716563287,5.0,592033
+lst_day_mean,LST $R^2$,sydney,Sydney,calliper,CaLLiPer,0.2331289768218994,0.1188685655501817,5.0,592033
+lst_day_mean,LST $R^2$,sydney,Sydney,space2vec,Space2Vec,0.1071891546249389,0.1410691344711709,5.0,592033
+lst_day_mean,LST $R^2$,sydney,Sydney,place2vec,Place2Vec,0.2074115753173828,0.0504461074415841,5.0,592033
+lst_day_mean,LST $R^2$,sydney,Sydney,urban2vec,Urban2Vec,0.1583802223205566,0.0720617981165882,5.0,592033
+lst_day_mean,LST $R^2$,sydney,Sydney,muse,MuseCL,0.1435671091079711,0.1373755517069838,5.0,592033
+lst_day_mean,LST $R^2$,sydney,Sydney,satclip,SatCLIP,0.342676830291748,0.2013857264623725,5.0,592033
+lst_day_mean,LST $R^2$,mumbai,Mumbai,aether,AETHER,0.5616691589355469,0.0433563790931867,5.0,55394
+lst_day_mean,LST $R^2$,mumbai,Mumbai,alphaearth,AlphaEarth,0.5620805859565735,0.0799495531238467,5.0,55394
+lst_day_mean,LST $R^2$,mumbai,Mumbai,tessera,TESSERA,0.5489015102386474,0.0664053459673627,5.0,55394
+lst_day_mean,LST $R^2$,mumbai,Mumbai,cityfm,CityFM,0.6823992848396301,0.0487943030735383,5.0,55394
+lst_day_mean,LST $R^2$,mumbai,Mumbai,calliper,CaLLiPer,0.442344069480896,0.0833022958350127,5.0,55394
+lst_day_mean,LST $R^2$,mumbai,Mumbai,space2vec,Space2Vec,0.2402145981788635,0.1588808957973247,5.0,55394
+lst_day_mean,LST $R^2$,mumbai,Mumbai,place2vec,Place2Vec,0.2071761846542358,0.0932257000360362,5.0,55394
+lst_day_mean,LST $R^2$,mumbai,Mumbai,urban2vec,Urban2Vec,0.2583321928977966,0.0586369258367998,5.0,55394
+lst_day_mean,LST $R^2$,mumbai,Mumbai,muse,MuseCL,0.2006722927093505,0.0899709118130412,5.0,55394
+lst_day_mean,LST $R^2$,mumbai,Mumbai,satclip,SatCLIP,0.1462156772613525,0.0407368611097401,5.0,55394
+lst_day_mean,LST $R^2$,nairobi,Nairobi,aether,AETHER,0.78696129322052,0.0541095108864798,5.0,81389
+lst_day_mean,LST $R^2$,nairobi,Nairobi,alphaearth,AlphaEarth,0.8012469410896301,0.0525173084551421,5.0,81389
+lst_day_mean,LST $R^2$,nairobi,Nairobi,tessera,TESSERA,0.7684440732002258,0.0596495658735746,5.0,81389
+lst_day_mean,LST $R^2$,nairobi,Nairobi,cityfm,CityFM,0.7352145552635193,0.0927559726639524,5.0,81389
+lst_day_mean,LST $R^2$,nairobi,Nairobi,calliper,CaLLiPer,0.7102330327033997,0.059349473693628,5.0,81389
+lst_day_mean,LST $R^2$,nairobi,Nairobi,space2vec,Space2Vec,0.705314290523529,0.0673199555235526,5.0,81389
+lst_day_mean,LST $R^2$,nairobi,Nairobi,place2vec,Place2Vec,0.076211929321289,0.0705646605836309,5.0,81389
+lst_day_mean,LST $R^2$,nairobi,Nairobi,urban2vec,Urban2Vec,0.1739242672920227,0.1137681435215486,5.0,81389
+lst_day_mean,LST $R^2$,nairobi,Nairobi,muse,MuseCL,0.3401430487632751,0.2509916814714027,5.0,81389
+lst_day_mean,LST $R^2$,nairobi,Nairobi,satclip,SatCLIP,0.2535260558128357,0.1077001467221274,5.0,81389
+lst_day_mean,LST $R^2$,jakarta,Jakarta,aether,AETHER,0.5707322001457215,0.0773227153771891,5.0,75117
+lst_day_mean,LST $R^2$,jakarta,Jakarta,alphaearth,AlphaEarth,0.5051116943359375,0.1277586204741289,5.0,75117
+lst_day_mean,LST $R^2$,jakarta,Jakarta,tessera,TESSERA,0.5185912489891052,0.1044818572259039,5.0,75117
+lst_day_mean,LST $R^2$,jakarta,Jakarta,cityfm,CityFM,0.5427342772483825,0.3045251306069344,5.0,75117
+lst_day_mean,LST $R^2$,jakarta,Jakarta,calliper,CaLLiPer,0.6210847139358521,0.094500070111036,5.0,75117
+lst_day_mean,LST $R^2$,jakarta,Jakarta,space2vec,Space2Vec,0.3956130623817444,0.186561708039927,5.0,75117
+lst_day_mean,LST $R^2$,jakarta,Jakarta,place2vec,Place2Vec,0.0916228771209716,0.1088822393829788,5.0,75117
+lst_day_mean,LST $R^2$,jakarta,Jakarta,urban2vec,Urban2Vec,0.2070940256118774,0.2138379200844197,5.0,75117
+lst_day_mean,LST $R^2$,jakarta,Jakarta,muse,MuseCL,0.1756612539291381,0.0718417055447811,5.0,75117
+lst_day_mean,LST $R^2$,jakarta,Jakarta,satclip,SatCLIP,0.1508471608161926,0.1285046322585905,5.0,75117
+lst_day_mean,LST $R^2$,cape_town,Cape Town,aether,AETHER,0.3874977111816406,0.1823813602381916,5.0,339759
+lst_day_mean,LST $R^2$,cape_town,Cape Town,alphaearth,AlphaEarth,0.426728630065918,0.162386076373131,5.0,339759
+lst_day_mean,LST $R^2$,cape_town,Cape Town,tessera,TESSERA,0.336449122428894,0.1680715800726821,5.0,339759
+lst_day_mean,LST $R^2$,cape_town,Cape Town,cityfm,CityFM,0.1780661702156067,0.1712657006886245,5.0,339759
+lst_day_mean,LST $R^2$,cape_town,Cape Town,calliper,CaLLiPer,0.2037113666534424,0.1895801730869647,5.0,339759
+lst_day_mean,LST $R^2$,cape_town,Cape Town,space2vec,Space2Vec,0.2037113189697265,0.1795458401617661,5.0,339759
+lst_day_mean,LST $R^2$,cape_town,Cape Town,place2vec,Place2Vec,0.1294509768486023,0.1755042584005347,5.0,339759
+lst_day_mean,LST $R^2$,cape_town,Cape Town,urban2vec,Urban2Vec,0.0687435626983642,0.209892305404813,5.0,339759
+lst_day_mean,LST $R^2$,cape_town,Cape Town,muse,MuseCL,0.0861694931983947,0.2118851317269455,5.0,339759
+lst_day_mean,LST $R^2$,cape_town,Cape Town,satclip,SatCLIP,0.2502490520477295,0.1653201140752412,5.0,339759

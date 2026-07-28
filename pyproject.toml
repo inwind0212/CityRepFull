@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "urban-benchmark"
+version = "1.0.0"
+description = "Evaluation toolkit for the CityRep urban representation benchmark."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+  "geopandas",
+  "h3",
+  "matplotlib",
+  "nbformat",
+  "numpy",
+  "pandas",
+  "pyarrow",
+  "pyproj",
+  "rasterio",
+  "scikit-learn",
+  "seaborn",
+  "shapely",
+  "scipy",
+  "torch",
+  "tqdm",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "mlcroissant==1.1.0"]
+
+[project.scripts]
+urban-benchmark = "urban_benchmark.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["urban_benchmark*"]

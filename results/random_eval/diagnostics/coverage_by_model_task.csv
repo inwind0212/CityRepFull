@@ -1,0 +1,12 @@
+model,landuse,road_density,population,age_distribution,gdp,nightlight,pm25,lst_day_mean
+aether,8,8,8,8,8,8,8,8
+alphaearth,8,8,8,8,8,8,8,8
+tessera,8,8,8,8,8,8,8,8
+satclip,8,8,8,8,8,8,8,8
+muse,8,8,8,8,8,8,8,8
+urban2vec,8,8,8,8,8,8,8,8
+cityfm,8,8,8,8,8,8,8,8
+calliper,8,8,8,8,8,8,8,8
+space2vec,8,8,8,8,8,8,8,8
+place2vec,8,8,8,8,8,8,8,8
+sphere2vec_fixed,8,8,8,8,8,8,8,8

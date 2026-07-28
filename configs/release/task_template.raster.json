@@ -1,0 +1,12 @@
+{
+  "task_id": "example_city.example_raster_task.2026",
+  "task_type": "regression",
+  "source_type": "raster",
+  "raster_path": "tasks/example_city.example_raster_task.2026/label.tif",
+  "band": 1,
+  "sample_stride": 1,
+  "drop_zeros": false,
+  "normalization": "zscore",
+  "split_method": "spatial_block",
+  "n_blocks": 10
+}

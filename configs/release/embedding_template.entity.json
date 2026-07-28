@@ -1,0 +1,21 @@
+{
+  "model": "example_entity_model",
+  "model_label": "ExampleEntityModel",
+  "city": "example_city",
+  "task": "example_task",
+  "task_id": "example_city.example_task.2026",
+  "embedding_source_type": "entity",
+  "embedding_config": {
+    "type": "entity",
+    "path": "baselines/artifacts/example_entity_model/example_city/entity_embeddings.parquet",
+    "name": "ExampleEntityModel",
+    "x_col": "lon",
+    "y_col": "lat",
+    "crs": "EPSG:4326",
+    "entity_id_col": "entity_id",
+    "task_entity_id_col": "sample_id"
+  },
+  "source_role": "entity_or_point_embedding_table",
+  "alignment_policy": "entity id lookup when available; otherwise nearest-neighbor coordinate matching",
+  "available": true
+}

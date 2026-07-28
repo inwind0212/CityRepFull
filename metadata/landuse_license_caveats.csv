@@ -1,0 +1,5 @@
+task_id,city,status,note
+london.landuse.2026,london,synthetic_demo_only,Synthetic 24-row CC BY 4.0 demo; Verisk reference task excluded.
+mumbai.landuse.2026,mumbai,cc_by_4_processed_release,CC BY 4.0 processed samples; credit LoginMumbai/UDRI and MCGM.
+jakarta.landuse.2026,jakarta,cc_by_4_processed_release,CC BY 4.0 processed samples; credit DKI Jakarta RDTR 2022.
+cape_town.landuse.2026,cape_town,confirmed_open_data_policy,City of Cape Town Open Data; credit PBDM.

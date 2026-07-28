@@ -1,0 +1,11 @@
+model,model_label,mean_task_rank,median_task_rank,best_task_rank,worst_task_rank,mean_city_rank,tasks_scored,run_count,coverage_ratio
+calliper,CaLLiPer,2.0,1.5,1,4,2.59375,8,64,1.0
+aether,AETHER,3.375,3.5,1,6,3.421875,8,64,1.0
+alphaearth,AlphaEarth,3.5,3.5,1,6,3.71875,8,64,1.0
+tessera,TESSERA,3.875,3.5,1,7,4.015625,8,64,1.0
+space2vec,Space2Vec,4.125,4.5,2,7,4.0,8,64,1.0
+cityfm,CityFM,5.375,5.5,3,7,5.515625,8,64,1.0
+urban2vec,Urban2Vec,6.125,6.0,3,9,5.96875,8,64,1.0
+place2vec,Place2Vec,7.75,8.0,6,9,7.84375,8,64,1.0
+muse,MuseCL,8.875,9.0,5,10,8.765625,8,64,1.0
+satclip,SatCLIP,9.375,10.0,7,10,9.15625,8,64,1.0

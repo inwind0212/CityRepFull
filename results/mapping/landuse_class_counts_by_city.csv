@@ -1,0 +1,85 @@
+city,city_label,mapped_group,count,percent,task_n_samples
+new_york,New York,Residential,85445,85.44500000000001,100000
+new_york,New York,Mixed Use,6270,6.2700000000000005,100000
+new_york,New York,Commercial,2460,2.46,100000
+new_york,New York,Industrial,1085,1.085,100000
+new_york,New York,Transportation,1315,1.315,100000
+new_york,New York,Green / Recreation,147,0.147,100000
+new_york,New York,Institutional / Civic,1031,1.031,100000
+new_york,New York,Utilities,0,0.0,100000
+new_york,New York,Water,0,0.0,100000
+new_york,New York,Agriculture / Rural,0,0.0,100000
+new_york,New York,Vacant / Reserve,2247,2.247,100000
+new_york,New York,Other,0,0.0,100000
+singapore,Singapore,Residential,16521,16.521,100000
+singapore,Singapore,Mixed Use,1436,1.436,100000
+singapore,Singapore,Commercial,880,0.88,100000
+singapore,Singapore,Industrial,15420,15.42,100000
+singapore,Singapore,Transportation,16743,16.743,100000
+singapore,Singapore,Green / Recreation,19298,19.298000000000002,100000
+singapore,Singapore,Institutional / Civic,3703,3.703,100000
+singapore,Singapore,Utilities,1822,1.822,100000
+singapore,Singapore,Water,5478,5.478000000000001,100000
+singapore,Singapore,Agriculture / Rural,785,0.7849999999999999,100000
+singapore,Singapore,Vacant / Reserve,11887,11.887,100000
+singapore,Singapore,Other,6027,6.027,100000
+sydney,Sydney,Residential,26457,26.457000000000004,100000
+sydney,Sydney,Mixed Use,736,0.736,100000
+sydney,Sydney,Commercial,2187,2.1870000000000003,100000
+sydney,Sydney,Industrial,3438,3.438,100000
+sydney,Sydney,Transportation,3351,3.351,100000
+sydney,Sydney,Green / Recreation,30526,30.525999999999996,100000
+sydney,Sydney,Institutional / Civic,3050,3.05,100000
+sydney,Sydney,Utilities,958,0.958,100000
+sydney,Sydney,Water,2543,2.543,100000
+sydney,Sydney,Agriculture / Rural,22362,22.362000000000002,100000
+sydney,Sydney,Vacant / Reserve,2146,2.146,100000
+sydney,Sydney,Other,2246,2.246,100000
+mumbai,Mumbai,Residential,25698,25.698,100000
+mumbai,Mumbai,Mixed Use,0,0.0,100000
+mumbai,Mumbai,Commercial,2691,2.691,100000
+mumbai,Mumbai,Industrial,5361,5.361,100000
+mumbai,Mumbai,Transportation,3454,3.454,100000
+mumbai,Mumbai,Green / Recreation,26357,26.357000000000003,100000
+mumbai,Mumbai,Institutional / Civic,3759,3.759,100000
+mumbai,Mumbai,Utilities,2139,2.139,100000
+mumbai,Mumbai,Water,5635,5.635,100000
+mumbai,Mumbai,Agriculture / Rural,3803,3.803,100000
+mumbai,Mumbai,Vacant / Reserve,16656,16.656000000000002,100000
+mumbai,Mumbai,Other,4447,4.447,100000
+nairobi,Nairobi,Residential,19200,19.2,100000
+nairobi,Nairobi,Mixed Use,1369,1.369,100000
+nairobi,Nairobi,Commercial,1034,1.034,100000
+nairobi,Nairobi,Industrial,3834,3.834,100000
+nairobi,Nairobi,Transportation,2674,2.674,100000
+nairobi,Nairobi,Green / Recreation,55945,55.945,100000
+nairobi,Nairobi,Institutional / Civic,6685,6.6850000000000005,100000
+nairobi,Nairobi,Utilities,0,0.0,100000
+nairobi,Nairobi,Water,1884,1.884,100000
+nairobi,Nairobi,Agriculture / Rural,0,0.0,100000
+nairobi,Nairobi,Vacant / Reserve,71,0.07100000000000001,100000
+nairobi,Nairobi,Other,7304,7.303999999999999,100000
+jakarta,Jakarta,Residential,41978,41.978,100000
+jakarta,Jakarta,Mixed Use,0,0.0,100000
+jakarta,Jakarta,Commercial,17709,17.709,100000
+jakarta,Jakarta,Industrial,7232,7.231999999999999,100000
+jakarta,Jakarta,Transportation,13623,13.623,100000
+jakarta,Jakarta,Green / Recreation,8260,8.260000000000002,100000
+jakarta,Jakarta,Institutional / Civic,7622,7.622,100000
+jakarta,Jakarta,Utilities,154,0.154,100000
+jakarta,Jakarta,Water,3156,3.1559999999999997,100000
+jakarta,Jakarta,Agriculture / Rural,186,0.186,100000
+jakarta,Jakarta,Vacant / Reserve,0,0.0,100000
+jakarta,Jakarta,Other,80,0.08,100000
+cape_town,Cape Town,Residential,11383,11.383000000000001,100000
+cape_town,Cape Town,Mixed Use,459,0.459,100000
+cape_town,Cape Town,Commercial,874,0.874,100000
+cape_town,Cape Town,Industrial,2134,2.1340000000000003,100000
+cape_town,Cape Town,Transportation,8765,8.765,100000
+cape_town,Cape Town,Green / Recreation,9831,9.831,100000
+cape_town,Cape Town,Institutional / Civic,2130,2.13,100000
+cape_town,Cape Town,Utilities,1215,1.2149999999999999,100000
+cape_town,Cape Town,Water,0,0.0,100000
+cape_town,Cape Town,Agriculture / Rural,40288,40.288000000000004,100000
+cape_town,Cape Town,Vacant / Reserve,0,0.0,100000
+cape_town,Cape Town,Other,22921,22.921,100000
