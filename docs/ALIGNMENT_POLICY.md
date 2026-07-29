@@ -12,7 +12,7 @@ Every model is evaluated on the sample IDs and coordinates registered for the do
 
 The evaluator does not apply a universal runtime mean-pooling operation. Several released raster artifacts were pre-materialized to a task grid by their export scripts; where this occurs, the manifest path, artifact metadata, and filename record the task-specific export, commonly with `_mean` or `taskgrid`.
 
-For download size only, native AETHER rows and native AlphaEarth land-use rows are materialized once with this runtime policy and stored as `sample_id`-keyed entity tables. These tables contain the exact float values before row-wise L2 normalization; they do not change pooling, interpolation, splits, labels, or the downstream head. Their per-task alignment reports are included in the model ZIPs. The release manifest selects these tables directly, so users do not need the hundreds of GiB of unused city-wide pixels.
+For download size only, native AETHER rows and native AlphaEarth land-use rows are materialized once with this runtime policy and stored as `sample_id`-keyed entity tables. These tables contain the exact float values before row-wise L2 normalization; they do not change pooling, interpolation, splits, labels, or the downstream head. Their per-task alignment reports are included with the model artifacts. The release manifest selects these tables directly, so users do not need the hundreds of GiB of unused city-wide pixels.
 
 ## Model-specific sources
 

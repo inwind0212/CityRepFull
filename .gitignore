@@ -13,6 +13,8 @@ dist/
 results/repro_*/
 results/*_shards/
 results/repro_logs/
+results/release_audit.json
+results/smoke_eval/
 results/*_rerun*/
 results/*/aligned/
 results/*/predictions/
@@ -25,11 +27,13 @@ results/*/predictions/
 *.hdf5
 
 # Data are distributed on Kaggle and materialized locally for reproduction.
+sample/
 data/tasks/*
 !data/tasks/README.md
 splits/**/*.json.gz
-embeddings/packages/*
-!embeddings/packages/README.md
+splits/**/*.json
+embeddings/*
+!embeddings/README.md
 baselines/artifacts/*
 !baselines/artifacts/README.md
 baselines/checkpoints/*

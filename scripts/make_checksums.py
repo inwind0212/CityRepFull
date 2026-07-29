@@ -43,6 +43,19 @@ def skip(path: Path, root: Path, include_data: bool) -> bool:
         return True
     if rel_parts[:2] == ("metadata", "checksums"):
         return True
+    if rel_parts == ("results", "release_audit.json"):
+        return True
+    if rel_parts[:1] == ("sample",):
+        return True
+    if rel_parts[:2] in {
+        ("baselines", "artifacts"),
+        ("baselines", "checkpoints"),
+    } and path.name != "README.md":
+        return True
+    if rel_parts[:1] == ("embeddings",) and path.name != "README.md":
+        return True
+    if rel_parts[:1] == ("splits",) and path.suffix in {".json", ".gz"}:
+        return True
     return False
 
 
@@ -68,4 +81,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

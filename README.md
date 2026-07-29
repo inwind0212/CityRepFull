@@ -8,7 +8,7 @@ CityRep evaluates frozen urban representations across 8 cities, 8 task types, an
 
 - 64 registered city-task payloads with provenance and availability metadata.
 - 126 fixed split files with five seeds per protocol.
-- 11 model-level embedding packages.
+- Frozen embeddings grouped into 11 model directories.
 - A 704-row model-city-task manifest with machine-readable availability.
 - Evaluation and alignment code, fixed-split generation, exact protocol parameters, notebooks, compact reference results, and checksums.
 
@@ -22,17 +22,31 @@ conda activate urban-benchmark
 pip install -e .
 ```
 
-## Download
+## Try the sample
+
+Download and validate the representative Singapore AlphaEarth embedding
+(less than 1 MB):
+
+```bash
+kaggle auth login
+bash download_sample.sh
+```
+
+The sample is an unmodified GeoTIFF from the full release. It demonstrates the
+embedding format and is not a benchmark subset.
+
+## Download the full release
 
 Authenticate the Kaggle CLI, then run:
 
 ```bash
 pip install kaggle
 kaggle auth login
-./download.sh
+bash download.sh
 ```
 
-The full release is downloaded from `cityrep/cityrep` and placed under
+The scripts default to the verified Kaggle release `cityrep/cityrep/13`. The
+full release is placed under
 `data/tasks/`, `splits/`, and `baselines/artifacts/`.
 
 ## Verify
@@ -77,11 +91,12 @@ Rows marked `available=false` are skipped. The released protocol uses task-speci
 - `splits/manifest.csv`: 126 released split files.
 - `baselines/registry/`: model and embedding manifests; baseline training code is not included.
 - `results/` and `notebooks/`: compact reference results and analyses.
-- `metadata/`: package manifests, Croissant metadata, audits, and checksums.
+- `metadata/`: release manifests, Croissant metadata, audits, and checksums.
 
 ## Documentation
 
 - [Quickstart](QUICKSTART.md)
+- [Embedding sample](docs/SAMPLE.md)
 - [Evaluation protocol](docs/EVALUATION_CARD.md)
 - [Alignment policy](docs/ALIGNMENT_POLICY.md)
 - [Reproducibility](docs/REPRODUCIBILITY.md)

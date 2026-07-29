@@ -6,7 +6,7 @@ This file summarizes the processed public release. Per-task `task.json` files an
 
 - 64 registered processed task payloads with availability metadata.
 - Registries, metadata, fixed splits, compact results, and figures.
-- Frozen embeddings grouped into 11 model packages.
+- Frozen embeddings grouped into 11 model directories.
 
 Software is MIT. Released data, splits, frozen embeddings, metadata, and
 synthetic examples are CC BY 4.0. Baseline training and upstream model code are

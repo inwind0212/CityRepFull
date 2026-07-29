@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import ast
+import hashlib
 import json
 import os
 import subprocess
@@ -9,7 +10,6 @@ import shutil
 import sys
 import tempfile
 import traceback
-import zipfile
 from pathlib import Path
 from typing import Any
 
@@ -163,7 +163,12 @@ def main(argv: list[str] | None = None) -> None:
     audit.add_argument("--embedding-manifest", default=str(DEFAULT_MANIFEST))
     audit.add_argument("--result-root", default=str(DEFAULT_MAIN_RESULT))
     audit.add_argument("--split-manifest", default=str(PACKAGE_ROOT / "splits" / "manifest.csv"))
-    audit.add_argument("--model-package-manifest", default=str(PACKAGE_ROOT / "metadata" / "model_packages.csv"))
+    audit.add_argument(
+        "--model-directory-manifest",
+        "--model-package-manifest",
+        dest="model_directory_manifest",
+        default=str(PACKAGE_ROOT / "metadata" / "model_directories.csv"),
+    )
     audit.add_argument("--out", default=str(PACKAGE_ROOT / "results" / "release_audit.json"))
     audit.add_argument("--allow-missing-artifacts", action="store_true")
 
@@ -1127,29 +1132,52 @@ def _audit(args: argparse.Namespace) -> None:
             except Exception as exc:
                 split_invalid.append(f"{row.protocol_id}/{row.task_id}: {exc}")
 
-    package_manifest_path = Path(args.model_package_manifest)
-    package_manifest = pd.read_csv(package_manifest_path) if package_manifest_path.is_file() else pd.DataFrame()
-    package_existing = 0
-    package_members: set[str] = set()
-    package_invalid: list[str] = []
-    if not package_manifest.empty:
-        for row in package_manifest.itertuples(index=False):
-            package_path = Path(str(row.package_path))
-            if not package_path.is_absolute():
-                package_candidate = PACKAGE_ROOT / package_path
-                release_candidate = package_manifest_path.parent.parent / package_path
-                package_path = package_candidate if package_candidate.is_file() else release_candidate
-            if not package_path.is_file():
+    directory_manifest_path = Path(args.model_directory_manifest)
+    directory_manifest = (
+        pd.read_csv(directory_manifest_path)
+        if directory_manifest_path.is_file()
+        else pd.DataFrame()
+    )
+    directory_existing = 0
+    directory_invalid: list[str] = []
+    if not directory_manifest.empty:
+        release_root = directory_manifest_path.parent.parent.parent
+        for row in directory_manifest.itertuples(index=False):
+            candidates: list[Path] = []
+            for value in (row.install_prefix, row.distribution_path):
+                path = Path(str(value))
+                if path.is_absolute():
+                    candidates.append(path)
+                else:
+                    candidates.extend((PACKAGE_ROOT / path, release_root / path))
+            directory_path = next(
+                (
+                    path
+                    for path in candidates
+                    if path.is_dir()
+                    and any(child.is_file() for child in path.rglob("*"))
+                ),
+                None,
+            )
+            if directory_path is None:
                 continue
-            package_existing += 1
+            directory_existing += 1
             try:
-                with zipfile.ZipFile(package_path) as archive:
-                    package_members.update(archive.namelist())
-            except (OSError, zipfile.BadZipFile) as exc:
-                package_invalid.append(f"{row.model}: {exc}")
+                file_count, total_size, tree_digest = _directory_tree_stats(directory_path)
+                expected = (
+                    int(row.file_count),
+                    int(row.total_size_bytes),
+                    str(row.tree_sha256),
+                )
+                observed = (file_count, total_size, tree_digest)
+                if observed != expected:
+                    directory_invalid.append(
+                        f"{row.model}: expected {expected}, observed {observed}"
+                    )
+            except OSError as exc:
+                directory_invalid.append(f"{row.model}: {exc}")
 
-    available["artifact_in_package"] = available["artifact_path"].astype(str).isin(package_members)
-    available["path_available"] = available["path_exists"] | available["artifact_in_package"]
+    available["path_available"] = available["path_exists"]
 
     task_availability = {
         task_id: str(spec.get("availability", "full"))
@@ -1170,14 +1198,13 @@ def _audit(args: argparse.Namespace) -> None:
         "embedding_rows_available": int(len(available)),
         "embedding_paths_existing": int(available["path_available"].sum()),
         "embedding_paths_extracted": int(available["path_exists"].sum()),
-        "embedding_paths_in_packages": int(available["artifact_in_package"].sum()),
         "missing_artifact_rows": int((~available["path_available"]).sum()),
         "missing_artifacts_allowed": bool(args.allow_missing_artifacts),
         "model_count": int(available["model"].nunique()),
-        "model_package_rows": int(len(package_manifest)),
-        "model_packages_existing": int(package_existing),
-        "model_packages_invalid": int(len(package_invalid)),
-        "model_package_errors": package_invalid[:20],
+        "model_directory_rows": int(len(directory_manifest)),
+        "model_directories_existing": int(directory_existing),
+        "model_directories_invalid": int(len(directory_invalid)),
+        "model_directory_errors": directory_invalid[:20],
         "split_manifest_rows": int(len(split_manifest)),
         "split_files_existing": int(split_existing),
         "split_files_valid": int(split_valid),
@@ -1204,7 +1231,7 @@ def _audit(args: argparse.Namespace) -> None:
         and payload["embedding_rows_available"] == expected_available_embedding_rows == 693
         and payload["model_count"] == 11
         and payload["city_count"] == 8
-        and payload["model_package_rows"] == 11
+        and payload["model_directory_rows"] == 11
         and payload["split_manifest_rows"] == expected_split_files == 126
     )
     hard_fail = (
@@ -1212,18 +1239,34 @@ def _audit(args: argparse.Namespace) -> None:
         or payload["nightlight_landuse_population_mentions"] > 0
         or payload["failure_rows"] > 0
         or payload["split_files_invalid"] > 0
-        or payload["model_packages_invalid"] > 0
+        or payload["model_directories_invalid"] > 0
     )
     missing_release_assets = (
         payload["missing_artifact_rows"] > 0
         or payload["split_files_existing"] < expected_split_files
         or (
-            payload["model_packages_existing"] < 11
+            payload["model_directories_existing"] < 11
             and payload["embedding_paths_extracted"] < expected_available_embedding_rows
         )
     )
     if hard_fail or (missing_release_assets and not args.allow_missing_artifacts):
         raise SystemExit(1)
+
+
+def _directory_tree_stats(root: Path) -> tuple[int, int, str]:
+    """Return file count, byte size, and a path-aware SHA256 tree digest."""
+    tree_digest = hashlib.sha256()
+    files = sorted(path for path in root.rglob("*") if path.is_file())
+    total_size = 0
+    for path in files:
+        file_digest = hashlib.sha256()
+        with path.open("rb") as handle:
+            for chunk in iter(lambda: handle.read(8 * 1024 * 1024), b""):
+                file_digest.update(chunk)
+        relative = path.relative_to(root).as_posix()
+        tree_digest.update(f"{file_digest.hexdigest()}  {relative}\n".encode())
+        total_size += path.stat().st_size
+    return len(files), total_size, tree_digest.hexdigest()
 
 
 def _materialize_artifacts(args: argparse.Namespace) -> None:

@@ -1,0 +1,28 @@
+{
+  "sample_id": "singapore-alphaearth-pm25-2022",
+  "description": "Representative embedding-format sample selected from the full CityRep release.",
+  "selection": "This compact Singapore AlphaEarth PM2.5 artifact is copied byte-for-byte from the full release. No rows, pixels, bands, or values were changed.",
+  "purpose": "Quick inspection of the released GeoTIFF embedding format; not a benchmark evaluation subset.",
+  "model": "alphaearth",
+  "city": "singapore",
+  "task": "pm25",
+  "task_id": "singapore.pm25.2022",
+  "source_artifact": "baselines/artifacts/alphaearth/singapore/singapore_alphaearth_pm25_mean__6b89dbc081.tif",
+  "hosted_path": "cityrep_sample/singapore_alphaearth_pm25_mean__6b89dbc081.tif",
+  "format": "GeoTIFF",
+  "encoding_format": "image/tiff",
+  "size_bytes": 387631,
+  "sha256": "4bfcbb9955a4a0f14eb112eddc6c081830d98c0817ce998467feb880ec55bdd8",
+  "width": 47,
+  "height": 28,
+  "embedding_dim": 64,
+  "dtype": "float32",
+  "crs": "EPSG:4326",
+  "bounds": [
+    103.60000324249268,
+    1.1999937295913696,
+    104.07001399993896,
+    1.4800001382827759
+  ],
+  "license": "CC BY 4.0"
+}

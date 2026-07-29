@@ -15,12 +15,13 @@ def test_release_version_is_consistent() -> None:
 
 def test_croissant_metadata_validates_and_generates_records() -> None:
     dataset = mlc.Dataset(str(ROOT / "metadata" / "croissant" / "cityrep.json"))
-    records = list(islice(dataset.records(record_set="release-components"), 5))
-    assert len(records) == 5
+    records = list(islice(dataset.records(record_set="release-components"), 6))
+    assert len(records) == 6
     assert {row["release-components/component"] for row in records} == {
+        "embedding-sample",
         "task-payloads",
         "spatial-splits",
         "random-splits",
-        "model-packages",
+        "model-embeddings",
         "embedding-index",
     }

@@ -2,7 +2,7 @@
 
 ## Summary
 
-CityRep compares frozen urban representations across eight cities, eight task types, and heterogeneous spatial supports. The public release contains 64 registered city-task entries and 11 model-level embedding packages.
+CityRep compares frozen urban representations across eight cities, eight task types, and heterogeneous spatial supports. The public release contains 64 registered city-task entries and frozen embeddings grouped into 11 model directories.
 
 Cities: London, New York, Singapore, Sydney, Mumbai, Nairobi, Jakarta, and Cape Town.
 
@@ -10,13 +10,17 @@ Tasks: land-use classification; road-density, population, GDP, nighttime-light, 
 
 ## Hosted assets
 
-- `data/tasks/`: 64 registered payloads with task-level availability metadata.
-- `data/tasks.json` and `data/registry/tasks.csv`: 64-entry registries with availability metadata.
-- `splits/`: 126 fixed split files, each with five seeds.
-- `embeddings/packages/`: 11 model-level archives.
+- `cityrep_sample/`: one representative Singapore AlphaEarth embedding with
+  metadata and a checksum.
+- `cityrep_core/data/tasks/`: 64 registered payloads with task-level availability metadata.
+- `cityrep_core/data/tasks.json` and `cityrep_core/data/registry/tasks.csv`: 64-entry registries with availability metadata.
+- `cityrep_core/splits/`: 126 fixed split files, each with five seeds.
+- `embeddings/`: frozen artifacts grouped into 11 model directories.
 - Manifests, checksums, source/licence notes, and Croissant/RAI metadata.
 
 The embedding manifest contains 704 logical model-city-task rows with an explicit availability field.
+The sample is an unmodified copy of one artifact from the full release and is
+provided for format inspection, not benchmark evaluation.
 
 ## London disclosure
 

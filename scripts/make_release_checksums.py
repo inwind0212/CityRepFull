@@ -7,9 +7,6 @@ import argparse
 import hashlib
 from pathlib import Path
 
-import pandas as pd
-
-
 SKIP_DIRS = {
     ".git",
     ".ipynb_checkpoints",
@@ -32,7 +29,6 @@ def skip(path: Path, root: Path) -> bool:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--release-root", required=True, type=Path)
-    parser.add_argument("--package-manifest", required=True, type=Path)
     parser.add_argument(
         "--out",
         type=Path,
@@ -55,14 +51,6 @@ def main() -> None:
     out = (args.out or root / "checksums" / "release.sha256").resolve()
     out.parent.mkdir(parents=True, exist_ok=True)
 
-    packages = pd.read_csv(args.package_manifest)
-    known_packages = {
-        str(row.package_path): (int(row.size_bytes), str(row.sha256))
-        for row in packages.itertuples(index=False)
-    }
-    if len(known_packages) != 11:
-        raise ValueError(f"Expected 11 package records, found {len(known_packages)}")
-
     lines: list[str] = []
     files = sorted(
         path
@@ -71,15 +59,7 @@ def main() -> None:
     )
     for path in files:
         relative = path.relative_to(root).as_posix()
-        if relative in known_packages:
-            expected_size, digest = known_packages[relative]
-            if path.stat().st_size != expected_size:
-                raise ValueError(
-                    f"Package size mismatch for {relative}: "
-                    f"{path.stat().st_size} != {expected_size}"
-                )
-        else:
-            digest = sha256(path)
+        digest = sha256(path)
         lines.append(f"{digest}  {relative}")
 
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")

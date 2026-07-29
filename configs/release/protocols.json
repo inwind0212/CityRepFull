@@ -16,7 +16,7 @@
           100
         ],
         "fixed_split_root": "splits/block10_5seed_mlp1024",
-        "fixed_split_suffix": ".json.gz"
+        "fixed_split_suffix": ".json"
       },
       "predictor": {
         "name": "mlp",
@@ -43,7 +43,7 @@
           100
         ],
         "fixed_split_root": "splits/random_5seed_mlp1024",
-        "fixed_split_suffix": ".json.gz"
+        "fixed_split_suffix": ".json"
       },
       "predictor": {
         "name": "mlp",
@@ -74,7 +74,7 @@
           100
         ],
         "fixed_split_root": "splits/block10_5seed_mlp1024",
-        "fixed_split_suffix": ".json.gz"
+        "fixed_split_suffix": ".json"
       },
       "predictor": {
         "name": "mlp",
@@ -104,7 +104,7 @@
           100
         ],
         "fixed_split_root": "splits/random_5seed_mlp1024",
-        "fixed_split_suffix": ".json.gz"
+        "fixed_split_suffix": ".json"
       },
       "predictor": {
         "name": "mlp",

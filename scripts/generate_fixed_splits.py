@@ -54,7 +54,7 @@ def main() -> None:
         split_cfg = dict(protocol["split"])
         split_cfg.pop("fixed_split_file", None)
         split_cfg.pop("fixed_split_root", None)
-        suffix = str(split_cfg.pop("fixed_split_suffix", ".json.gz"))
+        suffix = str(split_cfg.pop("fixed_split_suffix", ".json"))
         protocol_root = Path(args.out_root) / protocol_id
         protocol_root.mkdir(parents=True, exist_ok=True)
 

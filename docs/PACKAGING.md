@@ -8,12 +8,18 @@ The code repository contains evaluation code, configurations, registries, compac
 
 The canonical `cityrep/cityrep` dataset contains:
 
+- `cityrep_sample/`: a representative Singapore AlphaEarth GeoTIFF with
+  metadata and a checksum;
 - `cityrep_core/`: task data, fixed splits, metadata, and checksums;
-- `embeddings/`: 11 model directories and their package manifest.
+- `embeddings/`: frozen artifacts grouped into 11 model directories.
 
-`download.sh` restores the documented repository paths. The package manifest,
-split manifest, and release checksums contain sizes and SHA-256 values. The
-704-row embedding manifest records task-specific availability.
+`download.sh` restores the documented repository paths. The model-directory
+manifest, split manifest, and release checksums contain sizes and SHA-256
+values. The 704-row embedding manifest records task-specific availability.
+
+`download_sample.sh` retrieves only the representative embedding. The sample is
+an unmodified artifact selected from the full release for quick format
+inspection; it is not a benchmark subset.
 
 The release excludes raw source downloads, credentials, training corpora, checkpoints, prediction dumps, caches, and the restricted Verisk-derived London task.
 

@@ -1,4 +1,4 @@
 path,artifact_type,kaggle_dataset,download_command,notes
-data/tasks.json,task_registry,${CITYREP_DATASET:-cityrep/cityrep},./download.sh tasks,Canonical task registry.
-data/tasks/<task_id>/samples.parquet,task_samples,${CITYREP_DATASET:-cityrep/cityrep},./download.sh tasks,Task sample tables used by the evaluator.
-data/tasks/<task_id>/labels.tif,label_raster,${CITYREP_DATASET:-cityrep/cityrep},./download.sh tasks,Present for raster-derived tasks.
+data/tasks.json,task_registry,${CITYREP_DATASET:-cityrep/cityrep},bash download.sh,Canonical task registry.
+data/tasks/<task_id>/samples.parquet,task_samples,${CITYREP_DATASET:-cityrep/cityrep},bash download.sh,Task sample tables used by the evaluator.
+data/tasks/<task_id>/labels.tif,label_raster,${CITYREP_DATASET:-cityrep/cityrep},bash download.sh,Present for raster-derived tasks.

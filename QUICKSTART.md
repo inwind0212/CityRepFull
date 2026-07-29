@@ -10,10 +10,19 @@ pip install -e .
 
 ## Download
 
+To download and validate the representative embedding sample:
+
+```bash
+kaggle auth login
+bash download_sample.sh
+```
+
+To download the full release:
+
 ```bash
 pip install kaggle
 kaggle auth login
-./download.sh
+bash download.sh
 ```
 
 ## Test the release
@@ -35,7 +44,7 @@ A successful audit reports:
 
 - 64 registry entries;
 - 126 valid split files;
-- 11 model packages;
+- 11 model directories;
 - 704 manifest rows with availability metadata;
 - zero missing released artifacts and zero failures.
 

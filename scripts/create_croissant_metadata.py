@@ -95,6 +95,10 @@ def main() -> None:
     available_embedding_rows = full_task_count * model_count
 
     container = {"@id": "cityrep-download"}
+    sample_path = (
+        "cityrep_sample/"
+        "singapore_alphaearth_pm25_mean__6b89dbc081.tif"
+    )
     distributions = [
         {
             "@type": "cr:FileObject",
@@ -110,7 +114,7 @@ def main() -> None:
             "name": "task payloads",
             "description": "Processed sample tables, task metadata, and label rasters.",
             "containedIn": container,
-            "includes": ["data/tasks/**"],
+            "includes": ["cityrep_core/data/tasks/**"],
             "encodingFormat": ["application/json", "application/x-parquet", "image/tiff"],
         },
         {
@@ -119,23 +123,36 @@ def main() -> None:
             "name": "fixed splits",
             "description": "Spatial and random partitions with five seeds, keyed by sample_id.",
             "containedIn": container,
-            "includes": ["splits/**/*.json.gz"],
-            "encodingFormat": "application/gzip",
+            "includes": ["cityrep_core/splits/**/*.json"],
+            "encodingFormat": "application/json",
         },
         {
             "@type": "cr:FileSet",
-            "@id": "model-packages",
-            "name": "model embedding packages",
-            "description": "Frozen embeddings grouped into 11 model packages.",
+            "@id": "model-directories",
+            "name": "model embeddings",
+            "description": "Frozen embeddings grouped into 11 model directories.",
             "containedIn": container,
-            "includes": ["embeddings/packages/*.zip"],
-            "encodingFormat": "application/zip",
+            "includes": ["embeddings/*/baselines/artifacts/**"],
+            "encodingFormat": ["image/tiff", "application/x-parquet", "application/json"],
+        },
+        {
+            "@type": "cr:FileObject",
+            "@id": "embedding-sample",
+            "name": "Singapore AlphaEarth PM2.5 embedding sample",
+            "description": (
+                "Unmodified representative GeoTIFF selected from the full release "
+                "for quick format inspection; not a benchmark subset."
+            ),
+            "contentUrl": sample_path,
+            "containedIn": container,
+            "encodingFormat": "image/tiff",
+            "sha256": "4bfcbb9955a4a0f14eb112eddc6c081830d98c0817ce998467feb880ec55bdd8",
         },
         {
             "@type": "cr:FileObject",
             "@id": "task-registry",
             "name": "tasks.json",
-            "contentUrl": "data/tasks.json",
+            "contentUrl": "cityrep_core/data/tasks.json",
             "containedIn": container,
             "encodingFormat": "application/json",
         },
@@ -143,7 +160,7 @@ def main() -> None:
             "@type": "cr:FileObject",
             "@id": "embedding-manifest",
             "name": "embedding_manifest.csv",
-            "contentUrl": "metadata/embedding_manifest.csv",
+            "contentUrl": "cityrep_core/metadata/embedding_manifest.csv",
             "containedIn": container,
             "encodingFormat": "text/csv",
         },
@@ -151,7 +168,7 @@ def main() -> None:
             "@type": "cr:FileObject",
             "@id": "split-manifest",
             "name": "manifest.csv",
-            "contentUrl": "splits/manifest.csv",
+            "contentUrl": "cityrep_core/splits/manifest.csv",
             "containedIn": container,
             "encodingFormat": "text/csv",
         },
@@ -180,11 +197,12 @@ def main() -> None:
             for field_id, data_type, description in fields
         ],
         "data": [
-            component_record("task-payloads", "data/tasks/**", len(tasks), "Registered task payloads with task-level availability metadata."),
-            component_record("spatial-splits", "splits/block10_5seed_mlp1024/*.json.gz", full_task_count, "Fixed spatial partitions for registered evaluation tasks."),
-            component_record("random-splits", "splits/random_5seed_mlp1024/*.json.gz", full_task_count, "Fixed random diagnostic partitions for registered evaluation tasks."),
-            component_record("model-packages", "embeddings/packages/*.zip", model_count, "Model-level embedding archives."),
-            component_record("embedding-index", "metadata/embedding_manifest.csv", embedding_rows, "Model-city-task index with task-specific availability metadata."),
+            component_record("embedding-sample", sample_path, 1, "Unmodified representative Singapore AlphaEarth GeoTIFF for format inspection."),
+            component_record("task-payloads", "cityrep_core/data/tasks/**", len(tasks), "Registered task payloads with task-level availability metadata."),
+            component_record("spatial-splits", "cityrep_core/splits/block10_5seed_mlp1024/*.json", full_task_count, "Fixed spatial partitions for registered evaluation tasks."),
+            component_record("random-splits", "cityrep_core/splits/random_5seed_mlp1024/*.json", full_task_count, "Fixed random diagnostic partitions for registered evaluation tasks."),
+            component_record("model-embeddings", "embeddings/*/baselines/artifacts/**", model_count, "Frozen artifacts grouped into model directories."),
+            component_record("embedding-index", "cityrep_core/metadata/embedding_manifest.csv", embedding_rows, "Model-city-task index with task-specific availability metadata."),
         ],
     }
 
@@ -195,7 +213,7 @@ def main() -> None:
         "description": (
             "CityRep contains 64 registered city-task entries across eight cities and eight "
             "task types, 126 fixed split files, and frozen embeddings grouped into 11 "
-            "model packages. The 704-row manifest records task-specific availability."
+            "model directories. The 704-row manifest records task-specific availability."
         ),
         "conformsTo": "http://mlcommons.org/croissant/1.1",
         "isLiveDataset": True,
@@ -234,7 +252,7 @@ def main() -> None:
             {"@type": "prov:Activity", "name": "CityRep task preprocessing", "description": "Source-specific cleaning, harmonization, sampling, and label construction recorded in task metadata."},
             {"@type": "prov:Activity", "name": "CityRep split generation", "description": "Deterministic spatial and random partitions generated from stable sample identifiers with five fixed seeds."},
             {"@type": "prov:Activity", "name": "CityRep embedding export", "description": "Frozen model outputs exported to raster, region-table, point-table, or entity-table representations."},
-            {"@type": "prov:Activity", "name": "London synthetic schema demo generation", "description": "No random seed or source records are used. scripts/make_london_synthetic_demo.py deterministically creates two artificial rows per released class from fixed coordinate constants and sequential synthetic identifiers."},
+            {"@type": "prov:Activity", "name": "London synthetic schema demo generation", "description": "No source records are used; the schema-only rows use artificial coordinates, labels, and identifiers."},
         ],
     }
     if args.code_url:

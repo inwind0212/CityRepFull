@@ -3,7 +3,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")"
 
-DATASET="${CITYREP_DATASET:-cityrep/cityrep}"
+DATASET="${CITYREP_DATASET:-cityrep/cityrep/13}"
 DEST="${CITYREP_DOWNLOAD_ROOT:-.}"
 
 if ! command -v kaggle >/dev/null 2>&1; then
@@ -23,7 +23,12 @@ trap 'rm -rf "${scratch}"' EXIT
 echo "[download] ${DATASET}"
 kaggle datasets download -d "${DATASET}" -p "${scratch}" --unzip -o
 
-cp -a "${scratch}/cityrep_core/." "${DEST}/"
+mkdir -p "${DEST}/data" "${DEST}/splits"
+cp -a "${scratch}/cityrep_core/data/." "${DEST}/data/"
+cp -a "${scratch}/cityrep_core/splits/block10_5seed_mlp1024/." \
+  "${DEST}/splits/block10_5seed_mlp1024/"
+cp -a "${scratch}/cityrep_core/splits/random_5seed_mlp1024/." \
+  "${DEST}/splits/random_5seed_mlp1024/"
 
 if [[ -d "${scratch}/embeddings" ]]; then
   while IFS= read -r -d '' model_dir; do
