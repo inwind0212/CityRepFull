@@ -1,4 +1,4 @@
-# Model Artifact Placeholder
+# Embedding Directory
 
 This directory is populated from the 11 model directories in the canonical
 `cityrep/cityrep` Kaggle dataset.

@@ -106,6 +106,7 @@ Rows marked `available=false` are skipped. The released protocol uses task-speci
 
 ## License
 
-Software: [MIT](LICENSE). Released data, splits, frozen embeddings, and metadata:
+Software: [MIT](LICENSE). Unless source-specific terms apply, CityRep-produced
+data, splits, frozen embeddings, and metadata use
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See
-[Data License and Attribution](DATA_LICENSES.md).
+[Data License and Attribution](DATA_LICENSES.md) for required attribution.

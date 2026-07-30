@@ -328,7 +328,7 @@
         "task_specific_raster"
       ],
       "artifact_path": "baselines/artifacts/tessera",
-      "external_dependency_note": "GeoTessera/API-derived raster representation; prepared city/task exports are provided in the model artifact package.",
+      "external_dependency_note": "GeoTessera/API-derived raster representation; prepared city/task exports are provided in the TESSERA model directory.",
       "modalities": [
         "remote_sensing"
       ],
@@ -365,7 +365,7 @@
         "task_specific_raster"
       ],
       "artifact_path": "baselines/artifacts/alphaearth",
-      "external_dependency_note": "Public raster representation; prepared city/task exports are provided in the model artifact package.",
+      "external_dependency_note": "Public raster representation; prepared city/task exports are provided in the AlphaEarth model directory.",
       "modalities": [
         "remote_sensing"
       ],

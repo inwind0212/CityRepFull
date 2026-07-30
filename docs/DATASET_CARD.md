@@ -36,10 +36,10 @@ Each task directory contains `samples.parquet` and `task.json`; raster-derived t
 
 ## Licences
 
-Released data, splits, frozen embeddings, metadata, and synthetic examples use
-CC BY 4.0. Required source credits are listed in `DATA_LICENSES.md` and each
-`task.json`. Raw upstream inputs and the restricted London reference task are
-not included.
+Unless source-specific terms apply, CityRep-produced data, splits, frozen
+embeddings, metadata, and synthetic examples use CC BY 4.0. Required source
+credits are listed in `DATA_LICENSES.md` and each `task.json`. Raw upstream
+inputs and the restricted London reference task are not included.
 
 ## Limitations
 

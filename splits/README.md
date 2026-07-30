@@ -1,6 +1,6 @@
 # Fixed Splits
 
-The public release contains 126 compressed JSON files across two protocols:
+The public release contains 126 JSON files across two protocols:
 
 - `block10_5seed_mlp1024/`: task-specific spatial-block partitions.
 - `random_5seed_mlp1024/`: task-specific random diagnostic partitions.

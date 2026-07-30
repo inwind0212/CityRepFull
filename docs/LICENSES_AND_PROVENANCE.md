@@ -8,9 +8,9 @@ This file summarizes the processed public release. Per-task `task.json` files an
 - Registries, metadata, fixed splits, compact results, and figures.
 - Frozen embeddings grouped into 11 model directories.
 
-Software is MIT. Released data, splits, frozen embeddings, metadata, and
-synthetic examples are CC BY 4.0. Baseline training and upstream model code are
-not included.
+Software is MIT. Unless source-specific terms apply, CityRep-produced data,
+splits, frozen embeddings, metadata, and synthetic examples are CC BY 4.0.
+Baseline training and upstream model code are not included.
 
 ## Excluded
 

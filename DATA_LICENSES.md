@@ -1,7 +1,9 @@
 # Data License and Attribution
 
-CityRep data, fixed splits, frozen embeddings, metadata, and synthetic examples
-are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Unless a source-specific term below applies, CityRep-produced data, fixed
+splits, frozen embeddings, metadata, and synthetic examples are released under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Source-specific
+rights and attribution requirements remain in force.
 CityRep software is released under the [MIT License](LICENSE).
 
 Required source attribution:

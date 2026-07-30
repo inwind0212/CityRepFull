@@ -1,4 +1,4 @@
-# Downstream Task Data Placeholder
+# Task Data Directory
 
 This directory is populated from the canonical `cityrep/cityrep` Kaggle dataset.
 
