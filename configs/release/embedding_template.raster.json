@@ -11,6 +11,6 @@
     "name": "ExampleRasterModel"
   },
   "source_role": "native_or_task_specific_raster",
-  "alignment_policy": "task samples read from the embedding raster by matched cell or coordinate sampling",
+  "alignment_policy": "exact-grid lookup; otherwise area-mean alignment to a raster task grid or coordinate sampling for a sample task",
   "available": true
 }

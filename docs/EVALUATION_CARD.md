@@ -18,7 +18,7 @@ A task's five partitions are shared by all 11 models. Different tasks do not hav
 
 ## Alignment and input normalization
 
-The evaluator supports raster, region/H3, point/entity, and coordinate-derived embeddings. The exact registered source and alignment rule for every model-city-task row is stored in `baselines/registry/embedding_manifest.csv`. Aligned embedding vectors are L2-normalized row by row. There is no feature-wise z-standardization.
+The evaluator supports raster, region/H3, point/entity, and coordinate-derived embeddings. A finer raster is area-averaged within each raster-backed task cell by default; an exact-grid raster uses direct lookup, and a coarser raster value is shared by the task cells it covers. The exact registered source and alignment rule for every model-city-task row is stored in `baselines/registry/embedding_manifest.csv`. Aligned embedding vectors are L2-normalized row by row. There is no feature-wise z-standardization.
 
 See `docs/ALIGNMENT_POLICY.md` for the distinction between pre-materialized task-grid artifacts and runtime alignment.
 

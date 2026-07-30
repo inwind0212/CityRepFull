@@ -74,6 +74,8 @@ def evaluate(
         else align_embedding(
             task,
             embedding,
+            method=str(alignment_cfg.get("method", "auto")),
+            pooling=str(alignment_cfg.get("pooling", "mean")),
             normalize=bool(alignment_cfg.get("normalize", normalize_embedding)),
             fill_missing=alignment_cfg.get("fill_missing"),
         )
