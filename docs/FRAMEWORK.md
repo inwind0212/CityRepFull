@@ -54,7 +54,7 @@ Supported embedding source types:
 - `raster`: multi-band raster embeddings.
 - `point_table`: embeddings generated directly at task point coordinates.
 
-For region embeddings from irregular source units, export to H3 first. Raster embeddings should remain as rasters and be sampled by coordinates or by matched raster cell indices.
+For region embeddings from irregular source units, export to H3 first. Raster embeddings should remain as rasters: use matched-cell lookup on the task grid, area-mean alignment for a different raster task grid, or coordinate sampling only for sample tasks without a task grid.
 
 ## Scope Of Automatic Extension
 

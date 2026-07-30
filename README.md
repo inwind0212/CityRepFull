@@ -83,6 +83,8 @@ python -m urban_benchmark summarize --result-root results/repro_main_eval
 
 Rows marked `available=false` are skipped. The released protocol uses task-specific 10 × 10 spatial blocks, seeds `42, 24, 7, 0, 100`, row-wise L2 embedding normalization, and a one-hidden-layer MLP with 1024 units. Training uses Adam, learning rate `1e-3`, batch size `512`, at most 100 epochs, and early-stopping patience 10.
 
+For native raster inputs, finer embedding cells are area-averaged within each raster task cell by default; see [the alignment policy](docs/ALIGNMENT_POLICY.md).
+
 ## Repository layout
 
 - `urban_benchmark/`: evaluator and command-line interface.

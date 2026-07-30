@@ -91,6 +91,7 @@ def main(argv: list[str] | None = None) -> None:
     validate = sub.add_parser("validate-embedding")
     _add_embedding_args(validate)
     validate.add_argument("--task", required=True)
+    validate.add_argument("--pooling", choices=["mean", "max"], default="mean")
     validate.add_argument("--no-normalize", action="store_true")
 
     align = sub.add_parser("align")
@@ -98,6 +99,7 @@ def main(argv: list[str] | None = None) -> None:
     align.add_argument("--task", required=True)
     align.add_argument("--out", required=True)
     align.add_argument("--method", default="auto")
+    align.add_argument("--pooling", choices=["mean", "max"], default="mean")
     align.add_argument("--no-normalize", action="store_true")
 
     evaluate = sub.add_parser("evaluate", help="Run registered model-task evaluations from an embedding manifest.")
@@ -106,6 +108,7 @@ def main(argv: list[str] | None = None) -> None:
     evaluate.add_argument("--embedding-manifest", default=str(DEFAULT_MANIFEST))
     evaluate.add_argument("--protocol", default="block10_5seed_mlp1024")
     evaluate.add_argument("--device", default="cpu")
+    evaluate.add_argument("--pooling", choices=["mean", "max"])
     evaluate.add_argument("--out-root", default=str(DEFAULT_MAIN_RESULT))
     evaluate.add_argument("--models", nargs="*")
     evaluate.add_argument("--cities", nargs="*")
@@ -122,6 +125,7 @@ def main(argv: list[str] | None = None) -> None:
     evaluate_model.add_argument("--split", choices=["spatial", "random"], default=None)
     evaluate_model.add_argument("--seeds", default=None)
     evaluate_model.add_argument("--device", default="cpu")
+    evaluate_model.add_argument("--pooling", choices=["mean", "max"])
     evaluate_model.add_argument("--output", "--out-root", dest="out_root", required=True)
     evaluate_model.add_argument("--skip-existing", action=argparse.BooleanOptionalAction, default=True)
     evaluate_model.add_argument("--dry-run", action="store_true")
@@ -138,6 +142,11 @@ def main(argv: list[str] | None = None) -> None:
     run_model.add_argument("--model", default="user_model")
     run_model.add_argument("--model-label")
     run_model.add_argument("--device", default="cpu")
+    run_model.add_argument(
+        "--pooling",
+        choices=["mean", "max"],
+        help="Pooling for a raster embedding on a different task grid (default: protocol setting or mean).",
+    )
     run_model.add_argument("--embedding-pattern", help="Optional pattern, e.g. '{city}/{task}.tif' or '{city}.parquet'.")
     run_model.add_argument("--region-id-col")
     run_model.add_argument("--region-type", default="h3")
@@ -195,12 +204,18 @@ def main(argv: list[str] | None = None) -> None:
     elif args.command == "validate-embedding":
         task = load_task(args.task, args.task_registry)
         emb = _embedding_from_args(args)
-        aligned = align_embedding(task, emb, normalize=not args.no_normalize)
+        aligned = align_embedding(task, emb, pooling=args.pooling, normalize=not args.no_normalize)
         print(json.dumps(aligned.report, indent=2))
     elif args.command == "align":
         task = load_task(args.task, args.task_registry)
         emb = _embedding_from_args(args)
-        aligned = align_embedding(task, emb, method=args.method, normalize=not args.no_normalize)
+        aligned = align_embedding(
+            task,
+            emb,
+            method=args.method,
+            pooling=args.pooling,
+            normalize=not args.no_normalize,
+        )
         aligned.save(args.out)
         print(json.dumps(aligned.report, indent=2))
     elif args.command == "evaluate":
@@ -760,6 +775,9 @@ def _run_manifest_evaluation(args: argparse.Namespace, manifest_path: Path, out_
     protocol = load_protocol(args.protocol, args.protocol_registry)
     protocol.setdefault("predictor", {})
     protocol["predictor"]["device"] = args.device
+    if getattr(args, "pooling", None):
+        protocol.setdefault("alignment", {})
+        protocol["alignment"]["pooling"] = args.pooling
 
     results: list[dict[str, Any]] = []
     failures: list[dict[str, Any]] = []

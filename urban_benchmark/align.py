@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 import rasterio
 from rasterio.transform import rowcol, xy as transform_xy
+from rasterio.warp import Resampling, reproject
 from pyproj import Transformer
 from scipy.spatial import cKDTree
 
@@ -35,11 +36,19 @@ def align_embedding(
     embedding: RasterEmbedding | RegionEmbedding | PointEmbedding,
     *,
     method: str = "auto",
+    pooling: str = "mean",
     normalize: bool = True,
     fill_missing: dict[str, Any] | None = None,
 ) -> AlignedEmbedding:
     if isinstance(embedding, RasterEmbedding):
-        return _align_raster(task, embedding, method=method, normalize=normalize, fill_missing=fill_missing)
+        return _align_raster(
+            task,
+            embedding,
+            method=method,
+            pooling=pooling,
+            normalize=normalize,
+            fill_missing=fill_missing,
+        )
     if isinstance(embedding, RegionEmbedding):
         return _align_regions(task, embedding, method=method, normalize=normalize, fill_missing=fill_missing)
     if isinstance(embedding, PointEmbedding):
@@ -53,20 +62,110 @@ def _l2_normalize(X: np.ndarray, eps: float = 1e-6) -> np.ndarray:
 
 
 def _grid_matches(task: Task, src: rasterio.DatasetReader) -> bool:
-    meta = task.meta
-    label_path = meta.get("raster_path") or meta.get("labels_path")
+    label_path = _label_raster_path(task)
     if label_path is None:
         return False
     try:
         with rasterio.open(label_path) as label:
-            return (
-                label.width == src.width
-                and label.height == src.height
-                and label.crs == src.crs
-                and tuple(label.transform) == tuple(src.transform)
-            )
+            return _same_grid(label, src)
     except Exception:
         return False
+
+
+def _label_raster_path(task: Task) -> str | None:
+    meta = task.meta
+    label_path = meta.get("raster_path") or meta.get("labels_path")
+    return None if label_path is None else str(label_path)
+
+
+def _same_grid(a: rasterio.DatasetReader, b: rasterio.DatasetReader) -> bool:
+    return a.width == b.width and a.height == b.height and a.crs == b.crs and tuple(a.transform) == tuple(b.transform)
+
+
+def _can_pool_to_label_grid(task: Task, src: rasterio.DatasetReader) -> bool:
+    if task.task_type not in {"regression", "distribution"}:
+        return False
+    if not {"row", "col"}.issubset(task.samples.columns):
+        return False
+    label_path = _label_raster_path(task)
+    if label_path is None or src.crs is None:
+        return False
+    try:
+        with rasterio.open(label_path) as label:
+            return label.crs is not None and not _same_grid(label, src)
+    except Exception:
+        return False
+
+
+def _sample_raster_values(
+    src: rasterio.DatasetReader,
+    sample_xy: np.ndarray,
+    rows: np.ndarray,
+    cols: np.ndarray,
+) -> np.ndarray:
+    if len(sample_xy) == 0:
+        return np.empty((0, src.count), dtype=np.float32)
+    block_h, block_w = src.block_shapes[0] if src.block_shapes else (1, 1)
+    order = np.lexsort((cols // block_w, rows // block_h))
+    sampled = np.vstack([value for value in src.sample(sample_xy[order])]).astype(
+        np.float32, copy=False
+    )
+    values = np.empty_like(sampled)
+    values[order] = sampled
+    return values
+
+
+def _align_raster_cell(task: Task, src: rasterio.DatasetReader) -> np.ndarray:
+    rows = task.samples["row"].to_numpy(dtype=np.int64)
+    cols = task.samples["col"].to_numpy(dtype=np.int64)
+    if rows.size and (rows.min() < 0 or rows.max() >= src.height or cols.min() < 0 or cols.max() >= src.width):
+        raise ValueError("Task row/col exceed embedding raster dimensions.")
+    xs, ys = transform_xy(src.transform, rows, cols, offset="center")
+    sample_xy = np.column_stack([xs, ys]).astype(np.float64, copy=False)
+    return _sample_raster_values(src, sample_xy, rows, cols)
+
+
+def _pooling_resampling(pooling: str) -> Resampling:
+    pooling_name = str(pooling).lower()
+    if pooling_name in {"mean", "average"}:
+        return Resampling.average
+    if pooling_name == "max":
+        return Resampling.max
+    raise ValueError(f"Unsupported raster pooling method: {pooling!r}. Choose from: mean, max.")
+
+
+def _align_raster_area_pool(
+    task: Task,
+    src: rasterio.DatasetReader,
+    label_path: str,
+    *,
+    pooling: str,
+) -> np.ndarray:
+    resampling = _pooling_resampling(pooling)
+    rows = task.samples["row"].to_numpy(dtype=np.int64)
+    cols = task.samples["col"].to_numpy(dtype=np.int64)
+    with rasterio.open(label_path) as label:
+        if label.crs is None or src.crs is None:
+            raise ValueError("CRS is required for raster area-average alignment.")
+        if rows.size and (rows.min() < 0 or rows.max() >= label.height or cols.min() < 0 or cols.max() >= label.width):
+            raise ValueError("Task row/col exceed label raster dimensions.")
+
+        X = np.empty((len(rows), src.count), dtype=np.float32)
+        for band_idx in range(1, src.count + 1):
+            target = np.full((label.height, label.width), np.nan, dtype=np.float32)
+            reproject(
+                source=rasterio.band(src, band_idx),
+                destination=target,
+                src_transform=src.transform,
+                src_crs=src.crs,
+                src_nodata=src.nodata,
+                dst_transform=label.transform,
+                dst_crs=label.crs,
+                dst_nodata=np.nan,
+                resampling=resampling,
+            )
+            X[:, band_idx - 1] = target[rows, cols]
+    return X
 
 
 def _sample_coordinates(task: Task) -> np.ndarray:
@@ -146,46 +245,47 @@ def _spatial_fill_missing(
     return out, stats
 
 
-def _sample_raster_values(
-    src: rasterio.DatasetReader,
-    sample_xy: np.ndarray,
-    rows: np.ndarray,
-    cols: np.ndarray,
-) -> np.ndarray:
-    if len(sample_xy) == 0:
-        return np.empty((0, src.count), dtype=np.float32)
-    block_h, block_w = src.block_shapes[0] if src.block_shapes else (1, 1)
-    order = np.lexsort((cols // block_w, rows // block_h))
-    sampled = np.vstack([value for value in src.sample(sample_xy[order])]).astype(
-        np.float32, copy=False
-    )
-    values = np.empty_like(sampled)
-    values[order] = sampled
-    return values
-
-
 def _align_raster(
     task: Task,
     embedding: RasterEmbedding,
     *,
     method: str,
+    pooling: str,
     normalize: bool,
     fill_missing: dict[str, Any] | None,
 ) -> AlignedEmbedding:
     sample_ids = task.samples["sample_id"].astype(str).tolist()
     with rasterio.open(embedding.path) as src:
+        label_path = _label_raster_path(task)
         use_cell = method == "raster_cell" or (
             method == "auto" and {"row", "col"}.issubset(task.samples.columns) and _grid_matches(task, src)
         )
+        pooling_name = str(pooling).lower()
+        if method in {"raster_area_average", "raster_average", "area_average"}:
+            pooling_name = "mean"
+        elif method in {"raster_area_max", "raster_max", "area_max"}:
+            pooling_name = "max"
+        _pooling_resampling(pooling_name)
+        use_pooling = method in {
+            "raster_area_pool",
+            "area_pool",
+            "raster_area_average",
+            "raster_average",
+            "area_average",
+            "raster_area_max",
+            "raster_max",
+            "area_max",
+        } or (
+            method == "auto" and _can_pool_to_label_grid(task, src)
+        )
         if use_cell:
-            rows = task.samples["row"].to_numpy(dtype=np.int64)
-            cols = task.samples["col"].to_numpy(dtype=np.int64)
-            if rows.size and (rows.min() < 0 or rows.max() >= src.height or cols.min() < 0 or cols.max() >= src.width):
-                raise ValueError("Task row/col exceed embedding raster dimensions.")
-            xs, ys = transform_xy(src.transform, rows, cols, offset="center")
-            sample_xy = np.column_stack([xs, ys]).astype(np.float64, copy=False)
-            X = _sample_raster_values(src, sample_xy, rows, cols)
+            X = _align_raster_cell(task, src)
             aligner = "raster_cell"
+        elif use_pooling:
+            if label_path is None:
+                raise ValueError("A label raster is required for raster area-pooling alignment.")
+            X = _align_raster_area_pool(task, src, label_path, pooling=pooling_name)
+            aligner = "raster_area_average" if pooling_name in {"mean", "average"} else "raster_area_max"
         else:
             if task.samples.crs is None or src.crs is None:
                 raise ValueError("CRS is required for coordinate raster sampling.")
@@ -210,6 +310,8 @@ def _align_raster(
         "task_id": task.task_id,
         "embedding": embedding.metadata(),
         "aligner": aligner,
+        "pooling": pooling_name if use_pooling else None,
+        "label_raster_path": _label_raster_path(task),
         "n_task_samples": task.n_samples,
         "n_aligned_samples": int(X.shape[0]),
         "embedding_dim": int(X.shape[1]),

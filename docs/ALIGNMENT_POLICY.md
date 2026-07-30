@@ -4,13 +4,17 @@
 
 Every model is evaluated on the sample IDs and coordinates registered for the downstream task. Runtime behavior is:
 
-- Raster on the exact task grid: row/column lookup.
-- Raster on another grid: sample at task coordinates after CRS transformation.
+- Raster on the exact task grid: row/column lookup with no resampling.
+- Raster finer than a raster-backed task grid: area-weighted mean within each task cell. `max` pooling is available as an explicit alternative.
+- Raster coarser than a raster-backed task grid: the source-cell embedding is shared by the task cells it covers.
+- Raster used with a sample task that has no task grid: sample at task coordinates after CRS transformation.
 - H3/region table: task coordinates or registered region IDs are mapped to the region table.
 - Point/entity table: stable ID lookup when IDs exist; otherwise the registered point rule is used.
 - Coordinate encoder: embeddings are exported by querying the task coordinates.
 
-The evaluator does not apply a universal runtime mean-pooling operation. Several released raster artifacts were pre-materialized to a task grid by their export scripts; where this occurs, the manifest path, artifact metadata, and filename record the task-specific export, commonly with `_mean` or `taskgrid`.
+For raster-backed regression and distribution tasks, `method=auto` implements these rules by reprojecting each embedding band to the registered label grid. The released protocols set `pooling=mean`; users can select `--pooling max`. Coordinate sampling is not used as a substitute for aggregation when a task grid is available.
+
+Several released raster artifacts were already materialized on a task grid by their export scripts. They follow the first rule and are not pooled again; the manifest path, artifact metadata, and filename commonly record `_mean` or `taskgrid`.
 
 For download size only, native AETHER rows and native AlphaEarth land-use rows are materialized once with this runtime policy and stored as `sample_id`-keyed entity tables. These tables contain the exact float values before row-wise L2 normalization; they do not change pooling, interpolation, splits, labels, or the downstream head. Their per-task alignment reports are included with the model artifacts. The release manifest selects these tables directly, so users do not need the hundreds of GiB of unused city-wide pixels.
 

@@ -2,6 +2,10 @@
   "protocols": {
     "block10_5seed_mlp1024": {
       "protocol_id": "block10_5seed_mlp1024",
+      "alignment": {
+        "method": "auto",
+        "pooling": "mean"
+      },
       "split": {
         "method": "spatial_block",
         "n_blocks_x": 10,
@@ -30,6 +34,10 @@
     },
     "random_5seed_mlp1024": {
       "protocol_id": "random_5seed_mlp1024",
+      "alignment": {
+        "method": "auto",
+        "pooling": "mean"
+      },
       "split": {
         "method": "random",
         "test_ratio": 0.2,
@@ -58,6 +66,8 @@
     "block10_5seed_mlp1024_no_embedding_norm": {
       "protocol_id": "block10_5seed_mlp1024_no_embedding_norm",
       "alignment": {
+        "method": "auto",
+        "pooling": "mean",
         "normalize": false
       },
       "split": {
@@ -89,6 +99,8 @@
     "random_5seed_mlp1024_no_embedding_norm": {
       "protocol_id": "random_5seed_mlp1024_no_embedding_norm",
       "alignment": {
+        "method": "auto",
+        "pooling": "mean",
         "normalize": false
       },
       "split": {
